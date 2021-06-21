@@ -1,0 +1,424 @@
+/* Main Slider css
+============================================================================================ */
+.main_slider_area{
+    background: url(../img/home-slider/slider-1.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    .rev_slider{
+        .tp-revslider-mainul{
+            li{
+                z-index: 5 !important;
+                .slider_text_box{
+                    .first_text{
+                        color: #fff;
+                        font-weight: bold;
+                        letter-spacing: 4.2px;
+                        font-family: $mon; 
+                    }
+                    .secand_text{
+                        color: #fff;
+                        font-family: $op;
+                    }
+                    .third_text{
+                        color: #fff;
+                        font-family: $op;
+                    }
+                    .s_btn_store{
+                        .store_btn{
+                            margin-right: 25px;
+                            height: 50px;
+                            background: #502994;
+                            line-height: 50px;
+                            border-radius: 0px;
+                            max-width: 170px;
+                            width: 100%;
+                            &:before{
+                                border-radius: 0px;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Main Slider css
+============================================================================================ */
+
+/* Clients Slider css
+============================================================================================ */
+.clients_logo_area{
+    padding: 140px 0px;
+    border-bottom: 1px solid #eeeeee;
+    .clients_logo_slider{
+        .item{
+            text-align: center;
+            img{
+                width: auto;
+                max-width: 100%;
+                margin: auto;
+            }
+        }    
+    }
+    &.clients_bor{
+        border-top: 1px solid #eeeeee;
+        border-bottom: none;
+    }
+}
+/* End Clients Slider css
+============================================================================================ */
+
+/* Main Slider bg css
+============================================================================================ */
+.left_bg_text_slider{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    h2{
+        font-size: 60px;
+        letter-spacing: 4.2px;
+        color: #fff;
+        font-family: $mon;
+        font-weight: 600;
+    }
+    h3{
+        max-width: 370px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 50px;
+        font-family: $op;
+        padding-bottom: 90px;
+    }
+    .store_btn_dark{
+        max-width: 170px;
+        width: 100%;
+    }
+}
+.right_moblie_image{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    img{
+        max-width: 100%;
+    }
+}
+.slider_text_h{
+    min-height: 857px;
+}
+.slider_image_h{
+    min-height: 857px;
+}
+.main_bg_area{
+    background: url(../img/home-slider/slider-1.jpg) no-repeat scroll center center;
+    background-size: cover;
+    min-height: 857px;
+    position: relative;
+    
+    
+    
+    &.main_bg_image{
+        background: url(../img/home-slider/slider-2.jpg) no-repeat scroll center center;
+        position: relative;
+        background-size: cover;
+        z-index: 2;
+        &:before{
+            content: "";
+            background: rgba(80, 42, 148, .55);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .row{
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &.red_bg_area{
+        background: $red;
+        .right_moblie_image{
+            text-align: center;
+            width: 100%;
+        } 
+        .left_bg_text_slider{
+            .store_btn_dark{
+                background: #c61a32;
+                &:hover{
+                    color: $red;
+                }
+            }
+        }
+    }
+    &.blue_bg_area{
+        background: url(../img/home-slider/blue_bg_img.jpg) no-repeat scroll center center;
+        background-size: cover;
+        .right_moblie_image{
+            text-align: center;
+            width: 100%;
+        } 
+        .left_bg_text_slider{
+            .store_btn_dark{
+                background: #005885;
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+/* Violet BG */
+.main_bg_color_violet{
+    background: $baseColor;
+    min-height: 855px;
+    position: relative;
+    .main_bg_inner_content{
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+        transform: translateY(-50%);
+        .main_inner_content{
+            max-width: 770px;
+            margin: auto;
+            h3{
+                font-size: 60px;
+                font-family: $mon;
+                font-weight: 600;
+                line-height: 65px;
+                letter-spacing: 4.2px;
+                color: #fff;
+            }
+            p{
+                color: #fff;
+                font-size: 20px;
+                font-family: $op;
+                font-weight: 600;
+                max-width: 390px;
+                margin: auto;
+                line-height: 60px;
+                padding-bottom: 80px;
+            }
+            .store_btn.store_btn_dark{
+                max-width: 170px;
+                width: 100%;
+            }
+        }
+    }
+}
+.click_btn{
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+/* End Main Slider bg css
+============================================================================================ */
+
+/* Screen slider 3d css
+============================================================================================ */
+.screen_area_3d{
+    background: #f7f7f7;
+    padding: 100px 0px;
+    .screenshot_slider_3d{
+        ul{
+            .flipster__item--past{
+                .flipster__item__content{
+                    transform: scale(.90) rotateY(20deg);
+                }
+            }
+            .flipster__item--future{
+                .flipster__item__content{
+                    transform: scale(.90) rotateY(-20deg);
+                }
+            }
+        }
+    }
+}
+/* End Screen slider 3d css
+============================================================================================ */
+
+/* User Review css
+============================================================================================ */
+.user_review_area{
+    .user_review_slider2{
+        max-width: 970px;
+        margin: auto;
+        .item{
+            padding-top: 45px;
+            img{
+                max-width: 100%;
+                width: auto;
+                margin: auto;
+                text-align: center;
+                position: relative;
+                top: -45px;
+            }
+            .user_items_inner{
+                background: #f7f7f7;
+                text-align: center;
+                p{
+                    padding: 0px 40px;
+                    font-size: 14px;
+                    line-height: 26px;
+                    font-family: $op;
+                    margin-top: -10px;
+                    color: $dip;
+                }
+                ul{
+                    padding-top: 22px;
+                    li{
+                        display: inline-block;
+                        a{
+                            color: #ffbf00;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                h4{
+                    color: $dip;
+                    font-size: 14px;
+                    font-family: $op;
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                    &:hover{
+                        color: $baseColor;
+                    }
+                }
+            }
+        }
+        .owl-prev{
+            left: -75px;
+        }
+        .owl-prev, .owl-next{
+            position: absolute;
+            top: 56%;
+            transform: translateY(-50%);
+            z-index: 4;
+            i{
+                height: 42px;
+                width: 42px;
+                border-radius: 50%;
+                text-align: center;
+                display: inline-block;
+                border: 1px solid $dip;
+                line-height: 38px;
+                font-size: 30px;
+                color: $dip;
+                cursor: pointer;
+                @include transition;
+                &:hover{
+                    border-color: $baseColor;
+                    color: #fff;
+                    background: $baseColor;
+                }
+            }
+        }
+        .owl-next{
+            right: -75px;
+        }
+    }
+}
+/* End User Review css
+============================================================================================ */
+
+/* Kenburns Slider css
+============================================================================================ */
+.kenburns_area{
+    position: relative;
+    .rev_slider{
+        .tp-revslider-mainul{
+            li{
+                z-index: 3 !important;
+                .slotholder{
+                    .tp-bgimg{
+                        z-index: 3 !important;
+                        &:before{
+                            content: "";
+                            background: rgba(80, 42, 148, 0.55);
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            z-index: 4;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_slider_text{
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        .left_bg_text_slider{
+            z-index: 5;
+        }
+        
+    }
+}
+/* End Kenburns Slider css
+============================================================================================ */
+
+/* Video Slider css
+============================================================================================ */
+.video_slider_area{
+    .rev_slider{
+        .tp-revslider-mainul{
+            li{
+                z-index: 5 !important;
+                .rs-background-video-layer{
+                    &:before{
+                        content: "";
+                        background: rgba(80, 42, 148, 0.55);
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 4;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .slider_text_box{
+                    .first_text{
+                        color: #fff;
+                        font-weight: bold;
+                        letter-spacing: 4.2px;
+                        font-family: $mon; 
+                    }
+                    .secand_text{
+                        color: #fff;
+                        font-family: $op;
+                    }
+                    .third_text{
+                        color: #fff;
+                        font-family: $op;
+                    }
+                    .s_btn_store{
+                        .store_btn{
+                            margin-right: 25px;
+                            height: 50px;
+                            background: #502994;
+                            line-height: 50px;
+                            border-radius: 0px;
+                            &:before{
+                                border-radius: 0px;    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Video Slider css
+============================================================================================ */

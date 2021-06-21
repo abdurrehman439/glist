@@ -1,0 +1,5858 @@
+    <link href="<?php echo base_url(); ?>assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <link href="<?php echo base_url(); ?>assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.css" type="text/css">
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/owl.carousel.css" type="text/css">
+
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
+
+    <style type="text/css" rel="stylesheet">
+        #div-title,
+        #div-events-category,
+        #div-sales-category,
+        #div-coupons-category,
+        #div-service-require-category,
+        #div-service-providers-category,
+        #div-realty-category,
+        #div-nearby-stores-category,
+        #div-attractions-category,
+        #div-hire-a-resource-category,
+        #div-tickets-category,
+        #div-learnings-category,
+        #div-restaurants-category,
+        #div-rent-category,
+        #div-business-sales-category,
+        #div-short-term-hiring-category,
+        #div-hire-a-resource-second-language,
+        #div-business-name,
+        #div-tags,
+        #div-openhouse-date,
+        #div-date,
+        #div-start-date,
+        #div-finish-date,
+        #div-time-start,
+        #div-time-finish,
+        #div-open-hour,
+        #div-close-hour,
+        #div-expected-hours,
+        #div-details,
+        #div-work-details,
+        #div-job-description,
+        #div-price,
+        #div-price-duration,
+        #div-pay,
+        #div-pay-duration,
+        #div-amount,
+        #div-address,
+        #div-salary,
+        #div-hourly-rate,
+        #div-original-price,
+        #div-discounted-price,
+        #section-address,
+        #section-profile-option,
+        #section-jobs,
+        #section-realty,
+        #section-social,
+        #section-gallery,
+        #div-currency,
+        #section-match-friends {
+            display: none;
+        }
+    </style>
+
+    <div id="page-content">
+
+        <div class="container">
+
+            <ol class="breadcrumb">
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">Pages</a></li>
+
+                <li class="active">Contact</li>
+
+            </ol>
+
+            <!--end breadcrumb-->
+
+            <section class="page-title center">
+
+                <h1>Submit Listing Form</h1>
+
+            </section>
+
+            <!--end page-title-->
+
+            <section>
+
+                <div class="row">
+
+                    <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+
+                        <form id="submit-listing-form" method="post" class="form inputs-underline" enctype="multipart/form-data">
+
+                            <section>
+                                <div id="form-notification" class="row">
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+
+                                        <div class="form-group">
+
+                                            <label for="listing-type">Select Listing</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="listing-type" id="listing-type">
+                                                <option value="events" selected>Events</option>
+                                                <option value="garage-sales">Garage Sales</option>
+                                                <option value="sales">Sales</option>
+                                                <option value="coupons">Coupons</option>
+                                                <option value="jobs">Jobs</option>
+                                                <option value="service-require">Service Require</option>
+                                                <option value="service-providers">Service Offered</option>
+                                                <option value="realty">Realty</option>
+                                                <!--<option value="nearby-stores">Nearby Stores</option>-->
+                                                <option value="attractions">Attractions</option>
+                                                <option value="hire-a-resource">Gigs and Freelancers</option>
+                                                <option value="tickets">Tickets</option>
+                                                <option value="store-closures">Store Closures</option>
+                                                <option value="learnings">Learning &amp; Classes</option>
+                                                <option value="discards">Discards &amp; Scraps</option>
+                                                <!--<option value="restaurants">Restaurants</option>-->
+                                                <option value="rent">Rent</option>
+                                                <option value="funding">Funding</option>
+                                                <option value="business-sales">Business Sales</option>
+                                                <option value="short-term-hiring">Short Term Hiring</option>
+                                                <option value="match-friends">Match Friends</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-title">
+
+                                        <div class="form-group">
+
+                                            <label for="title">Title</label>
+
+                                            <input type="text" class="form-control" name="title" id="title" placeholder="Title">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-events-category">
+
+                                        <div class="form-group">
+
+                                            <label for="events-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="events-category" id="events-category">
+                                                <option value="fun_n_entertainment">Fun &amp; Entertainment</option>
+                                                <option value="education_n_informative">Education &amp; Informative</option>
+                                                <option value="games">Games</option>
+                                                <option value="religious">Religious</option>
+                                                <option value="other">Other</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-sales-category">
+
+                                        <div class="form-group">
+
+                                            <label for="sales-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="sales-category" id="sales-category">
+                                                <option value="new">New</option>
+                                                <option value="used">Used</option>
+                                                <option value="classic_antiques">Classic/Antiques</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-coupons-category">
+
+                                        <div class="form-group">
+
+                                            <label for="coupons-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="coupons-category" id="coupons-category">
+                                                <option value="goods">Goods</option>
+                                                <option value="services">Services</option>
+                                                <option value="attractions">Attractions</option>
+                                                <option value="household">Household</option>
+                                                <option value="events">Events</option>
+                                                <option value="others">Others</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-service-require-category">
+
+                                        <div class="form-group">
+
+                                            <label for="service-require-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="service-require-category" id="service-require-category">
+                                                <option value="hvac">HVAC</option>
+                                                <option value="electrical">Electrical</option>
+                                                <option value="plumbing">Plumbing</option>
+                                                <option value="home_construciton">Home Construciton</option>
+                                                <option value="lanscaping">Lanscaping</option>
+                                                <option value="roofing">Roofing</option>
+                                                <option value="cleaning">Cleaning</option>
+                                                <option value="painting">Painting</option>
+                                                <option value="interior_inside">Interior/Inside</option>
+                                                <option value="exterior_outside">Exterior/Outside</option>
+                                                <option value="labour">Labour</option>
+                                                <option value="automative">Automative</option>
+                                                <option value="beauty">Beauty</option>
+                                                <option value="computer">Computer</option>
+                                                <option value="accounting_n_finance">Accounting &amp; Finance</option>
+                                                <option value="taxation">Taxation</option>
+                                                <option value="household">Household</option>
+                                                <option value="legal">Legal</option>
+                                                <option value="education_n_classes">Education &amp; Classes</option>
+                                                <option value="others">Others</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-service-providers-category">
+
+                                        <div class="form-group">
+
+                                            <label for="service-providers-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="service-providers-category" id="service-providers-category">
+                                                <option value="hvac">HVAC</option>
+                                                <option value="electrical">Electrical</option>
+                                                <option value="plumbing">Plumbing</option>
+                                                <option value="home_construciton">Home Construciton</option>
+                                                <option value="lanscaping">Lanscaping</option>
+                                                <option value="roofing">Roofing</option>
+                                                <option value="cleaning">Cleaning</option>
+                                                <option value="painting">Painting</option>
+                                                <option value="interior_inside">Interior/Inside</option>
+                                                <option value="exterior_outside">Exterior/Outside</option>
+                                                <option value="labour">Labour</option>
+                                                <option value="automative">Automative</option>
+                                                <option value="beauty">Beauty</option>
+                                                <option value="computer">Computer</option>
+                                                <option value="accounting_n_finance">Accounting &amp; Finance</option>
+                                                <option value="taxation">Taxation</option>
+                                                <option value="household">Household</option>
+                                                <option value="legal">Legal</option>
+                                                <option value="education_n_classes">Education &amp; Classes</option>
+                                                <option value="others">Others</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12" style="padding:0px;" id="div-realty-category">
+
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+
+                                                <label for="realty-category">Category</label>
+
+                                                <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="realty-category" id="realty-category">
+                                                    <option value="for_sale">For Sale</option>
+                                                    <option value="for_rent">For Rent</option>
+                                                    <option value="others">Others</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="form-group">
+
+                                                <label for="realty-type">Type</label>
+
+                                                <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="realty-type" id="realty-type">
+                                                    <option value="appartments">Appartments</option>
+                                                    <option value="house">House</option>
+                                                    <option value="condo">Condo</option>
+                                                    <option value="office">Office</option>
+                                                    <option value="commercial">Commercial</option>
+                                                    <option value="lot_n_lands">Lot &amp; Lands</option>
+                                                    <option value="rooms_sharing">Rooms / Sharing</option>
+                                                    <option value="vaccation_home">Vaccation Home</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-nearby-stores-category">
+
+                                        <div class="form-group">
+
+                                            <label for="nearby-stores-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="nearby-stores-category" id="nearby-stores-category">
+                                                <option value="fun">Fun</option>
+                                                <option value="education">Education</option>
+                                                <option value="entertainment">Entertainment</option>
+                                                <option value="games">Games</option>
+                                                <option value="religious">Religious</option>
+                                                <option value="informative">Informative</option>
+                                                <option value="other">Other</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-attractions-category">
+
+                                        <div class="form-group">
+
+                                            <label for="attractions-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="attractions-category" id="attractions-category">
+                                                <option value="art_n_culture">Art &amp; Culture</option>
+                                                <option value="entertainment">Entertainment</option>
+                                                <option value="nightlife">Nightlife</option>
+                                                <option value="fun">Fun</option>
+                                                <option value="education">Education</option>
+                                                <option value="games">Games</option>
+                                                <option value="history_n_heritage">History &amp; Heritage</option>
+                                                <option value="monument_n_memorial">Monument &amp; Memorial</option>
+                                                <option value="meuseum">Meuseum</option>
+                                                <option value="shopping">Shopping</option>
+                                                <option value="festivals">Festivals</option>
+                                                <option value="saloon_n_spa">Saloon &amp; Spa</option>
+                                                <option value="sports">Sports</option>
+                                                <option value="outdoor_recreation">Outdoor Recreation</option>
+                                                <option value="theaters">Theaters</option>
+                                                <option value="sightseeing">Sightseeing</option>
+                                                <option value="parks">Parks</option>
+                                                <option value="water_parks">Water Parks</option>
+                                                <option value="lakes_n_beaches">Lakes &amp; Beaches</option>
+                                                <option value="rides_n_funplex">Rides &amp; Funplex</option>
+                                                <option value="others">Others</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-hire-a-resource-category">
+
+                                        <div class="form-group">
+
+                                            <label for="hire-a-resource-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="hire-a-resource-category" id="hire-a-resource-category">
+                                                <option value="web_design_n_development">Web Design &amp; Development</option>
+                                                <option value="graphics_n_design">Graphics &amp; Design</option>
+                                                <option value="programming">Programming</option>
+                                                <option value="digital_marketing">Digital Marketing</option>
+                                                <option value="writing">Writing</option>
+                                                <option value="video_n_animation">Video &amp; Animation</option>
+                                                <option value="music_n_audio">Music &amp; Audio</option>
+                                                <option value="business">Business</option>
+                                                <option value="lifestyle">Lifestyle</option>
+                                                <option value="tech">Tech</option>
+                                                <option value="accounting_n_finance">Accounting &amp; Finance</option>
+                                                <option value="taxation">Taxation</option>
+                                                <option value="education_related">Education Related</option>
+                                                <option value="others">Others</option>
+                                            </select>
+                                        </div>
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div id="div-hire-a-resource-second-language">
+
+                                        <div class="col-md-6 col-sm-6 form-group">
+
+                                            <label for="hire-a-resource-country">Country</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="hire-a-resource-country" id="hire-a-resource-country">
+                                                <option value="Afganistan">Afghanistan</option>
+                                                <option value="Albania">Albania</option>
+                                                <option value="Algeria">Algeria</option>
+                                                <option value="American Samoa">American Samoa</option>
+                                                <option value="Andorra">Andorra</option>
+                                                <option value="Angola">Angola</option>
+                                                <option value="Anguilla">Anguilla</option>
+                                                <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+                                                <option value="Argentina">Argentina</option>
+                                                <option value="Armenia">Armenia</option>
+                                                <option value="Aruba">Aruba</option>
+                                                <option value="Australia">Australia</option>
+                                                <option value="Austria">Austria</option>
+                                                <option value="Azerbaijan">Azerbaijan</option>
+                                                <option value="Bahamas">Bahamas</option>
+                                                <option value="Bahrain">Bahrain</option>
+                                                <option value="Bangladesh">Bangladesh</option>
+                                                <option value="Barbados">Barbados</option>
+                                                <option value="Belarus">Belarus</option>
+                                                <option value="Belgium">Belgium</option>
+                                                <option value="Belize">Belize</option>
+                                                <option value="Benin">Benin</option>
+                                                <option value="Bermuda">Bermuda</option>
+                                                <option value="Bhutan">Bhutan</option>
+                                                <option value="Bolivia">Bolivia</option>
+                                                <option value="Bonaire">Bonaire</option>
+                                                <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+                                                <option value="Botswana">Botswana</option>
+                                                <option value="Brazil">Brazil</option>
+                                                <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+                                                <option value="Brunei">Brunei</option>
+                                                <option value="Bulgaria">Bulgaria</option>
+                                                <option value="Burkina Faso">Burkina Faso</option>
+                                                <option value="Burundi">Burundi</option>
+                                                <option value="Cambodia">Cambodia</option>
+                                                <option value="Cameroon">Cameroon</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="Canary Islands">Canary Islands</option>
+                                                <option value="Cape Verde">Cape Verde</option>
+                                                <option value="Cayman Islands">Cayman Islands</option>
+                                                <option value="Central African Republic">Central African Republic</option>
+                                                <option value="Chad">Chad</option>
+                                                <option value="Channel Islands">Channel Islands</option>
+                                                <option value="Chile">Chile</option>
+                                                <option value="China">China</option>
+                                                <option value="Christmas Island">Christmas Island</option>
+                                                <option value="Cocos Island">Cocos Island</option>
+                                                <option value="Colombia">Colombia</option>
+                                                <option value="Comoros">Comoros</option>
+                                                <option value="Congo">Congo</option>
+                                                <option value="Cook Islands">Cook Islands</option>
+                                                <option value="Costa Rica">Costa Rica</option>
+                                                <option value="Cote DIvoire">Cote DIvoire</option>
+                                                <option value="Croatia">Croatia</option>
+                                                <option value="Cuba">Cuba</option>
+                                                <option value="Curaco">Curacao</option>
+                                                <option value="Cyprus">Cyprus</option>
+                                                <option value="Czech Republic">Czech Republic</option>
+                                                <option value="Denmark">Denmark</option>
+                                                <option value="Djibouti">Djibouti</option>
+                                                <option value="Dominica">Dominica</option>
+                                                <option value="Dominican Republic">Dominican Republic</option>
+                                                <option value="East Timor">East Timor</option>
+                                                <option value="Ecuador">Ecuador</option>
+                                                <option value="Egypt">Egypt</option>
+                                                <option value="El Salvador">El Salvador</option>
+                                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                                <option value="Eritrea">Eritrea</option>
+                                                <option value="Estonia">Estonia</option>
+                                                <option value="Ethiopia">Ethiopia</option>
+                                                <option value="Falkland Islands">Falkland Islands</option>
+                                                <option value="Faroe Islands">Faroe Islands</option>
+                                                <option value="Fiji">Fiji</option>
+                                                <option value="Finland">Finland</option>
+                                                <option value="France">France</option>
+                                                <option value="French Guiana">French Guiana</option>
+                                                <option value="French Polynesia">French Polynesia</option>
+                                                <option value="French Southern Ter">French Southern Ter</option>
+                                                <option value="Gabon">Gabon</option>
+                                                <option value="Gambia">Gambia</option>
+                                                <option value="Georgia">Georgia</option>
+                                                <option value="Germany">Germany</option>
+                                                <option value="Ghana">Ghana</option>
+                                                <option value="Gibraltar">Gibraltar</option>
+                                                <option value="Great Britain">Great Britain</option>
+                                                <option value="Greece">Greece</option>
+                                                <option value="Greenland">Greenland</option>
+                                                <option value="Grenada">Grenada</option>
+                                                <option value="Guadeloupe">Guadeloupe</option>
+                                                <option value="Guam">Guam</option>
+                                                <option value="Guatemala">Guatemala</option>
+                                                <option value="Guinea">Guinea</option>
+                                                <option value="Guyana">Guyana</option>
+                                                <option value="Haiti">Haiti</option>
+                                                <option value="Hawaii">Hawaii</option>
+                                                <option value="Honduras">Honduras</option>
+                                                <option value="Hong Kong">Hong Kong</option>
+                                                <option value="Hungary">Hungary</option>
+                                                <option value="Iceland">Iceland</option>
+                                                <option value="Indonesia">Indonesia</option>
+                                                <option value="India">India</option>
+                                                <option value="Iran">Iran</option>
+                                                <option value="Iraq">Iraq</option>
+                                                <option value="Ireland">Ireland</option>
+                                                <option value="Isle of Man">Isle of Man</option>
+                                                <option value="Israel">Israel</option>
+                                                <option value="Italy">Italy</option>
+                                                <option value="Jamaica">Jamaica</option>
+                                                <option value="Japan">Japan</option>
+                                                <option value="Jordan">Jordan</option>
+                                                <option value="Kazakhstan">Kazakhstan</option>
+                                                <option value="Kenya">Kenya</option>
+                                                <option value="Kiribati">Kiribati</option>
+                                                <option value="Korea North">Korea North</option>
+                                                <option value="Korea Sout">Korea South</option>
+                                                <option value="Kuwait">Kuwait</option>
+                                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                <option value="Laos">Laos</option>
+                                                <option value="Latvia">Latvia</option>
+                                                <option value="Lebanon">Lebanon</option>
+                                                <option value="Lesotho">Lesotho</option>
+                                                <option value="Liberia">Liberia</option>
+                                                <option value="Libya">Libya</option>
+                                                <option value="Liechtenstein">Liechtenstein</option>
+                                                <option value="Lithuania">Lithuania</option>
+                                                <option value="Luxembourg">Luxembourg</option>
+                                                <option value="Macau">Macau</option>
+                                                <option value="Macedonia">Macedonia</option>
+                                                <option value="Madagascar">Madagascar</option>
+                                                <option value="Malaysia">Malaysia</option>
+                                                <option value="Malawi">Malawi</option>
+                                                <option value="Maldives">Maldives</option>
+                                                <option value="Mali">Mali</option>
+                                                <option value="Malta">Malta</option>
+                                                <option value="Marshall Islands">Marshall Islands</option>
+                                                <option value="Martinique">Martinique</option>
+                                                <option value="Mauritania">Mauritania</option>
+                                                <option value="Mauritius">Mauritius</option>
+                                                <option value="Mayotte">Mayotte</option>
+                                                <option value="Mexico">Mexico</option>
+                                                <option value="Midway Islands">Midway Islands</option>
+                                                <option value="Moldova">Moldova</option>
+                                                <option value="Monaco">Monaco</option>
+                                                <option value="Mongolia">Mongolia</option>
+                                                <option value="Montserrat">Montserrat</option>
+                                                <option value="Morocco">Morocco</option>
+                                                <option value="Mozambique">Mozambique</option>
+                                                <option value="Myanmar">Myanmar</option>
+                                                <option value="Nambia">Nambia</option>
+                                                <option value="Nauru">Nauru</option>
+                                                <option value="Nepal">Nepal</option>
+                                                <option value="Netherland Antilles">Netherland Antilles</option>
+                                                <option value="Netherlands">Netherlands (Holland, Europe)</option>
+                                                <option value="Nevis">Nevis</option>
+                                                <option value="New Caledonia">New Caledonia</option>
+                                                <option value="New Zealand">New Zealand</option>
+                                                <option value="Nicaragua">Nicaragua</option>
+                                                <option value="Niger">Niger</option>
+                                                <option value="Nigeria">Nigeria</option>
+                                                <option value="Niue">Niue</option>
+                                                <option value="Norfolk Island">Norfolk Island</option>
+                                                <option value="Norway">Norway</option>
+                                                <option value="Oman">Oman</option>
+                                                <option value="Pakistan">Pakistan</option>
+                                                <option value="Palau Island">Palau Island</option>
+                                                <option value="Palestine">Palestine</option>
+                                                <option value="Panama">Panama</option>
+                                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                                <option value="Paraguay">Paraguay</option>
+                                                <option value="Peru">Peru</option>
+                                                <option value="Phillipines">Philippines</option>
+                                                <option value="Pitcairn Island">Pitcairn Island</option>
+                                                <option value="Poland">Poland</option>
+                                                <option value="Portugal">Portugal</option>
+                                                <option value="Puerto Rico">Puerto Rico</option>
+                                                <option value="Qatar">Qatar</option>
+                                                <option value="Republic of Montenegro">Republic of Montenegro</option>
+                                                <option value="Republic of Serbia">Republic of Serbia</option>
+                                                <option value="Reunion">Reunion</option>
+                                                <option value="Romania">Romania</option>
+                                                <option value="Russia">Russia</option>
+                                                <option value="Rwanda">Rwanda</option>
+                                                <option value="St Barthelemy">St Barthelemy</option>
+                                                <option value="St Eustatius">St Eustatius</option>
+                                                <option value="St Helena">St Helena</option>
+                                                <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+                                                <option value="St Lucia">St Lucia</option>
+                                                <option value="St Maarten">St Maarten</option>
+                                                <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+                                                <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+                                                <option value="Saipan">Saipan</option>
+                                                <option value="Samoa">Samoa</option>
+                                                <option value="Samoa American">Samoa American</option>
+                                                <option value="San Marino">San Marino</option>
+                                                <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+                                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                                <option value="Senegal">Senegal</option>
+                                                <option value="Seychelles">Seychelles</option>
+                                                <option value="Sierra Leone">Sierra Leone</option>
+                                                <option value="Singapore">Singapore</option>
+                                                <option value="Slovakia">Slovakia</option>
+                                                <option value="Slovenia">Slovenia</option>
+                                                <option value="Solomon Islands">Solomon Islands</option>
+                                                <option value="Somalia">Somalia</option>
+                                                <option value="South Africa">South Africa</option>
+                                                <option value="Spain">Spain</option>
+                                                <option value="Sri Lanka">Sri Lanka</option>
+                                                <option value="Sudan">Sudan</option>
+                                                <option value="Suriname">Suriname</option>
+                                                <option value="Swaziland">Swaziland</option>
+                                                <option value="Sweden">Sweden</option>
+                                                <option value="Switzerland">Switzerland</option>
+                                                <option value="Syria">Syria</option>
+                                                <option value="Tahiti">Tahiti</option>
+                                                <option value="Taiwan">Taiwan</option>
+                                                <option value="Tajikistan">Tajikistan</option>
+                                                <option value="Tanzania">Tanzania</option>
+                                                <option value="Thailand">Thailand</option>
+                                                <option value="Togo">Togo</option>
+                                                <option value="Tokelau">Tokelau</option>
+                                                <option value="Tonga">Tonga</option>
+                                                <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                                <option value="Tunisia">Tunisia</option>
+                                                <option value="Turkey">Turkey</option>
+                                                <option value="Turkmenistan">Turkmenistan</option>
+                                                <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                                                <option value="Tuvalu">Tuvalu</option>
+                                                <option value="Uganda">Uganda</option>
+                                                <option value="United Kingdom">United Kingdom</option>
+                                                <option value="Ukraine">Ukraine</option>
+                                                <option value="United Arab Erimates">United Arab Emirates</option>
+                                                <option value="United States of America">United States of America</option>
+                                                <option value="Uraguay">Uruguay</option>
+                                                <option value="Uzbekistan">Uzbekistan</option>
+                                                <option value="Vanuatu">Vanuatu</option>
+                                                <option value="Vatican City State">Vatican City State</option>
+                                                <option value="Venezuela">Venezuela</option>
+                                                <option value="Vietnam">Vietnam</option>
+                                                <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                                                <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                                                <option value="Wake Island">Wake Island</option>
+                                                <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+                                                <option value="Yemen">Yemen</option>
+                                                <option value="Zaire">Zaire</option>
+                                                <option value="Zambia">Zambia</option>
+                                                <option value="Zimbabwe">Zimbabwe</option>
+
+                                            </select>
+                                        </div>
+                                        <!--end form-group-->
+
+                                        <div class="col-md-6 col-sm-6 form-group " id="language-hide">
+
+                                            <label for="hire-a-resource-second-language">Second Language</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="hire-a-resource-second-language" id="hire-a-resource-second-language">
+                                                <option value="arabic">Arabic</option>
+                                                <option value="afrikaans">Afrikaans</option>
+                                                <option value="bengali">Bengali</option>
+                                                <option value="bulgarian">Bulgarian</option>
+                                                <option value="chinese">Chinese</option>
+                                                <option value="czech">Czech</option>
+                                                <option value="danish">Danish</option>
+                                                <option value="dutch">Dutch</option>
+                                                <option value="english">English</option>
+                                                <option value="french">French</option>
+                                                <option value="german">German</option>
+                                                <option value="greek">Greek</option>
+                                                <option value="hindi">Hindi</option>
+                                                <option value="hungarian">Hungarian</option>
+                                                <option value="irish">Irish</option>
+                                                <option value="italian">Italian</option>
+                                                <option value="japanese">Japanese</option>
+                                                <option value="korean">Korean</option>
+                                                <option value="latvian">Latvian</option>
+                                                <option value="polish">Polish</option>
+                                                <option value="persian">Persian</option>
+                                                <option value="portuguese">Portuguese</option>
+                                                <option value="romanian">Romanian</option>
+                                                <option value="russian">Russian</option>
+                                                <option value="swahili">Swahili</option>
+                                                <option value="slovak">Slovak</option>
+                                                <option value="slovenian">Slovenian</option>
+                                                <option value="spanish">Spanish</option>
+                                                <option value="swedish">Swedish</option>
+                                                <option value="turkish">Turkish</option>
+                                                <option value="thai">Thai</option>
+                                                <option value="urdu">Urdu</option>
+                                                <option value="other">Other</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6" id="div-tickets-category">
+
+                                        <div class="form-group">
+
+                                            <label for="tickets-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="tickets-category" id="tickets-category">
+                                                <option value="fun_n_entertainment">Fun &amp; Entertainment</option>
+                                                <option value="education_n_informative">Education &amp; Informative</option>
+                                                <option value="games">Games</option>
+                                                <option value="religious">Religious</option>
+                                                <option value="other">Other</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-learnings-category">
+
+                                        <div class="form-group">
+
+                                            <label for="learnings-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="learnings-category" id="learnings-category">
+                                                <option value="online">Online</option>
+                                                <option value="in_class">In Class</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-restaurants-category">
+
+                                        <div class="form-group">
+
+                                            <label for="restaurants-category">Category</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="restaurants-category" id="restaurants-category">
+                                                <option value="fun">Fun</option>
+                                                <option value="education">Education</option>
+                                                <option value="entertainment">Entertainment</option>
+                                                <option value="games">Games</option>
+                                                <option value="religious">Religious</option>
+                                                <option value="informative">Informative</option>
+                                                <option value="other">Other</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-rent-category">
+
+                                        <div class="form-group">
+
+                                            <label for="rent-category">Category</label>
+
+                                            <input type="text" class="form-control" name="rent-category" id="rent-category" placeholder="Category" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-business-sales-category">
+
+                                        <div class="form-group">
+
+                                            <label for="business-sales-category">Category</label>
+
+                                            <input type="text" class="form-control" name="business-sales-category" id="business-sales-category" placeholder="Category" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-short-term-hiring-category">
+
+                                        <div class="form-group">
+
+                                            <label for="short-term-hiring-category">Category</label>
+
+                                            <input type="text" class="form-control" name="short-term-hiring-category" id="short-term-hiring-category" placeholder="Category" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-business-name">
+
+                                        <div class="form-group">
+
+                                            <label for="business-name">Business Name</label>
+
+                                            <input type="text" class="form-control" name="business-name" id="business-name" placeholder="Business Name" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-tags">
+
+                                        <div class="form-group">
+
+                                            <label for="tags">Tags / Keywords</label>
+
+                                            <input type="text" class="form-control" name="tags" id="tags" placeholder="+ Add tag">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-openhouse-date">
+
+                                        <div class="form-group">
+
+                                            <label for="openhouse-date">Open House Date</label>
+
+                                            <input type="text" class="form-control date-picker" name="openhouse-date" id="openhouse-date" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-date">
+
+                                        <div class="form-group">
+
+                                            <label for="date">Date</label>
+
+                                            <input type="text" class="form-control date-picker" name="date" id="date" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-start-date">
+
+                                        <div class="form-group">
+
+                                            <label for="start-date">Start Date</label>
+
+                                            <input type="text" class="form-control date-picker" name="start-date" id="start-date" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-finish-date">
+
+                                        <div class="form-group">
+
+                                            <label for="finish-date">Finish Date</label>
+
+                                            <input type="text" class="form-control date-picker" name="finish-date" id="finish-date" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-time-start">
+
+                                        <div class="form-group">
+
+                                            <label for="time-start">Time Start</label>
+
+                                            <input type="time" class="form-control" name="time-start" id="time-start" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-time-finish">
+
+                                        <div class="form-group">
+
+                                            <label for="time-finish">Time Finish</label>
+
+                                            <input type="time" class="form-control" name="time-finish" id="time-finish" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-open-hour">
+
+                                        <div class="form-group">
+
+                                            <label for="open-hour">Open Hour</label>
+
+                                            <input type="time" class="form-control" name="open-hour" id="open-hour" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-close-hour">
+
+                                        <div class="form-group">
+
+                                            <label for="close-hour">Close Hour</label>
+
+                                            <input type="time" class="form-control" name="close-hour" id="close-hour" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-expected-hours">
+
+                                        <div class="form-group">
+
+                                            <label for="expected-hours">Expected Hours</label>
+
+                                            <input type="number" class="form-control" name="expected-hours" id="expected-hours" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-details">
+
+                                        <div class="form-group">
+                                            <label for="details">Details</label>
+                                            <textarea class="form-control" id="details" rows="4" name="details" placeholder="Details of listing"></textarea>
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-work-details">
+
+                                        <div class="form-group">
+                                            <label for="work-details">Work Details</label>
+                                            <textarea class="form-control" id="work-details" rows="4" name="work-details" placeholder="Details of work"></textarea>
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-job-description">
+
+                                        <div class="form-group">
+                                            <label for="job-description">Job Description</label>
+                                            <textarea class="form-control" id="job-description" rows="4" name="job-description" placeholder="Job description for listing"></textarea>
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6" id="div-price">
+
+                                        <div class="form-group">
+
+                                            <label for="price">Price</label>
+
+                                            <input type="number" class="form-control" name="price" id="price" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-price-duration">
+
+                                        <div class="form-group">
+
+                                            <label for="price-duration">Price Type</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="price-duration" id="price-duration">
+                                                <option value="per-hour" selected>Per Hour</option>
+                                                <option value="per-day">Per Day</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-pay">
+
+                                        <div class="form-group">
+
+                                            <label for="pay">Pay</label>
+
+                                            <input type="number" class="form-control" name="pay" id="pay" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-pay-duration">
+
+                                        <div class="form-group">
+
+                                            <label for="pay-duration">Pay Type</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="pay-duration" id="pay-duration">
+                                                <option value="per-hour" selected>Per Hour</option>
+                                                <option value="per-day">Per Day</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-amount">
+
+                                        <div class="form-group">
+
+                                            <label for="amount">Amount</label>
+
+                                            <input type="number" class="form-control" name="amount" id="amount" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-address">
+
+                                        <div class="form-group">
+
+                                            <label for="address">Address</label>
+
+                                            <input type="text" class="form-control" name="address" id="address" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-salary">
+
+                                        <div class="form-group">
+
+                                            <label for="salary">Salary</label>
+
+                                            <input type="number" class="form-control" name="salary" id="salary" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-hourly-rate">
+
+                                        <div class="form-group">
+
+                                            <label for="hourly-rate">Hourly Rate / Amount</label>
+
+                                            <input type="number" class="form-control" name="hourly-rate" id="hourly-rate" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-original-price">
+
+                                        <div class="form-group">
+
+                                            <label for="original-price">Original Price</label>
+
+                                            <input type="number" class="form-control" name="original-price" id="original-price" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-discounted-price">
+
+                                        <div class="form-group">
+
+                                            <label for="discounted-price">Discounted Price</label>
+
+                                            <input type="number" class="form-control" name="discounted-price" id="discounted-price" min="0" />
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-currency">
+
+                                        <div class="form-group">
+
+                                            <label for="currency">Currency</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" name="currency" id="currency">
+                                                <option value="CRP" selected="selected">Crypto Currency</option>
+                                                <option value="USD">United States Dollars</option>
+                                                <option value="EUR">Euro</option>
+                                                <option value="GBP">United Kingdom Pounds</option>
+                                                <option value="DZD">Algeria Dinars</option>
+                                                <option value="ARP">Argentina Pesos</option>
+                                                <option value="AUD">Australia Dollars</option>
+                                                <option value="ATS">Austria Schillings</option>
+                                                <option value="BSD">Bahamas Dollars</option>
+                                                <option value="BBD">Barbados Dollars</option>
+                                                <option value="BEF">Belgium Francs</option>
+                                                <option value="BMD">Bermuda Dollars</option>
+                                                <option value="BRR">Brazil Real</option>
+                                                <option value="BGL">Bulgaria Lev</option>
+                                                <option value="CAD">Canada Dollars</option>
+                                                <option value="CLP">Chile Pesos</option>
+                                                <option value="CNY">China Yuan Renmimbi</option>
+                                                <option value="CYP">Cyprus Pounds</option>
+                                                <option value="CSK">Czech Republic Koruna</option>
+                                                <option value="DKK">Denmark Kroner</option>
+                                                <option value="NLG">Dutch Guilders</option>
+                                                <option value="XCD">Eastern Caribbean Dollars</option>
+                                                <option value="EGP">Egypt Pounds</option>
+                                                <option value="FJD">Fiji Dollars</option>
+                                                <option value="FIM">Finland Markka</option>
+                                                <option value="FRF">France Francs</option>
+                                                <option value="DEM">Germany Deutsche Marks</option>
+                                                <option value="XAU">Gold Ounces</option>
+                                                <option value="GRD">Greece Drachmas</option>
+                                                <option value="HKD">Hong Kong Dollars</option>
+                                                <option value="HUF">Hungary Forint</option>
+                                                <option value="ISK">Iceland Krona</option>
+                                                <option value="INR">India Rupees</option>
+                                                <option value="IDR">Indonesia Rupiah</option>
+                                                <option value="IEP">Ireland Punt</option>
+                                                <option value="ILS">Israel New Shekels</option>
+                                                <option value="ITL">Italy Lira</option>
+                                                <option value="JMD">Jamaica Dollars</option>
+                                                <option value="JPY">Japan Yen</option>
+                                                <option value="JOD">Jordan Dinar</option>
+                                                <option value="KRW">Korea (South) Won</option>
+                                                <option value="LBP">Lebanon Pounds</option>
+                                                <option value="LUF">Luxembourg Francs</option>
+                                                <option value="MYR">Malaysia Ringgit</option>
+                                                <option value="MXP">Mexico Pesos</option>
+                                                <option value="NLG">Netherlands Guilders</option>
+                                                <option value="NZD">New Zealand Dollars</option>
+                                                <option value="NOK">Norway Kroner</option>
+                                                <option value="PKR">Pakistan Rupees</option>
+                                                <option value="XPD">Palladium Ounces</option>
+                                                <option value="PHP">Philippines Pesos</option>
+                                                <option value="XPT">Platinum Ounces</option>
+                                                <option value="PLZ">Poland Zloty</option>
+                                                <option value="PTE">Portugal Escudo</option>
+                                                <option value="ROL">Romania Leu</option>
+                                                <option value="RUR">Russia Rubles</option>
+                                                <option value="SAR">Saudi Arabia Riyal</option>
+                                                <option value="XAG">Silver Ounces</option>
+                                                <option value="SGD">Singapore Dollars</option>
+                                                <option value="SKK">Slovakia Koruna</option>
+                                                <option value="ZAR">South Africa Rand</option>
+                                                <option value="KRW">South Korea Won</option>
+                                                <option value="ESP">Spain Pesetas</option>
+                                                <option value="XDR">Special Drawing Right (IMF)</option>
+                                                <option value="SDD">Sudan Dinar</option>
+                                                <option value="SEK">Sweden Krona</option>
+                                                <option value="CHF">Switzerland Francs</option>
+                                                <option value="TWD">Taiwan Dollars</option>
+                                                <option value="THB">Thailand Baht</option>
+                                                <option value="TTD">Trinidad and Tobago Dollars</option>
+                                                <option value="TRL">Turkey Lira</option>
+                                                <option value="VEB">Venezuela Bolivar</option>
+                                                <option value="ZMK">Zambia Kwacha</option>
+                                                <option value="EUR">Euro</option>
+                                                <option value="XCD">Eastern Caribbean Dollars</option>
+                                                <option value="XDR">Special Drawing Right (IMF)</option>
+                                                <option value="XAG">Silver Ounces</option>
+                                                <option value="XAU">Gold Ounces</option>
+                                                <option value="XPD">Palladium Ounces</option>
+                                                <option value="XPT">Platinum Ounces</option>
+                                            </select>
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                </div>
+
+                                <!--end col-md-12-->
+
+                            </section>
+
+                            <section id="section-match-friends">
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-sm-6" id="div-age">
+                                        <div class="form-group">
+                                            <label for="age">Age</label>
+                                            <input type="number" class="form-control" name="age" id="age" placeholder="Age" min="1" max="150" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-gender">
+                                        <div class="form-group">
+                                            <label for="gender">Gender</label>
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="2" name="gender" id="gender">
+                                                <option value="male" selected>Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-about-yourself">
+                                        <div class="form-group">
+                                            <label for="about-yourself">About Yourself</label>
+                                            <textarea class="form-control" id="about-yourself" rows="4" name="about-yourself" placeholder="About Yourself"></textarea>
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-occupation">
+                                        <div class="form-group">
+                                            <label for="occupation">Occupation</label>
+                                            <input type="text" class="form-control" name="occupation" id="occupation" placeholder="Occupation" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-religion">
+                                        <div class="form-group">
+                                            <label for="religion">Religion</label>
+                                            <input type="text" class="form-control" name="religion" id="religion" placeholder="Religion" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-height">
+                                        <div class="form-group">
+                                            <label for="height">Height</label>
+                                            <input type="text" class="form-control" name="height" id="height" placeholder="Height" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-ethnicity">
+                                        <div class="form-group">
+                                            <label for="ethnicity">Ethnicity</label>
+                                            <input type="text" class="form-control" name="ethnicity" id="ethnicity" placeholder="Ethnicity" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-body-type">
+                                        <div class="form-group">
+                                            <label for="body-type">Body Type</label>
+                                            <input type="text" class="form-control" name="body-type" id="body-type" placeholder="Body Type" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6" id="div-education">
+                                        <div class="form-group">
+                                            <label for="education">Education</label>
+                                            <input type="text" class="form-control" name="education" id="education" placeholder="Education" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-ideal-match">
+                                        <div class="form-group">
+                                            <label for="ideal-match">Ideal Match</label>
+                                            <input type="text" class="form-control" name="ideal-match" id="ideal-match" placeholder="Ideal Match" />
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-relationship-history">
+                                        <div class="form-group">
+                                            <label for="relationship-history">Relationship History</label>
+                                            <textarea class="form-control" id="relationship-history" rows="4" name="relationship-history" placeholder="Relationship History"></textarea>
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-12-->
+
+                                    <div class="col-md-12 col-sm-12" id="div-lifestyle">
+                                        <div class="form-group">
+                                            <label for="lifestyle">Lifestyle</label>
+                                            <textarea class="form-control" id="lifestyle" rows="4" name="lifestyle" placeholder="Lifestyle"></textarea>
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-12-->
+
+                                </div>
+
+                            </section>
+
+                            <section id="section-address">
+
+                                <div class="row">
+
+                                    <div class="col-md-12 col-sm-12">
+
+                                        <h3>Contact</h3>
+
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="zipcode">City / Zip code</label>
+
+                                            <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="City / Zip code">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                        <div class="map height-200px shadow" id="listing-map"></div>
+
+                                        <!--end map-->
+
+                                        <div class="form-group hidden">
+
+                                            <input type="text" class="form-control" id="listing-latitude" name="listing-latitude" hidden="">
+
+                                            <input type="text" class="form-control" id="listing-longitude" name="listing-longitude" hidden="">
+
+                                        </div>
+
+                                        <p class="note">Enter the exact address or drag the map marker to position</p>
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="contact-name">Contact Name</label>
+
+                                            <input type="text" class="form-control" name="contact-name" id="contact-name" placeholder="Contact Name">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                        <div class="form-group">
+
+                                            <label for="contact-number">Contact Number</label>
+
+                                            <input type="text" class="form-control" name="contact-number" id="contact-number" placeholder="Contact number">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                        <div class="form-group">
+
+                                            <label for="contact-email">Contact Email</label>
+
+                                            <input type="email" class="form-control" name="contact-email" id="contact-email" placeholder="hello@example.com">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                        <div class="form-group">
+
+                                            <label for="contact-website">Contact Website</label>
+
+                                            <input type="text" class="form-control" name="contact-website" id="contact-website" placeholder="https://www.example.com">
+
+                                        </div>
+
+                                        <!--end form-group-->
+
+                                    </div>
+
+                                    <!--end col-md-6-->
+
+                                </div>
+
+                            </section>
+
+                            <section id="section-profile-option">
+
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <h3>Profile Privacy</h3>
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="radio" class="" id="profile-yes" name="profile-privacy" value="1" checked="true" />
+                                                <label for="profile-yes" style="position: relative; bottom: 3px;left: 5px;">APPEAR IN POST AND PROFESSINAL PROFILE</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-md-12-->
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <input type="radio" class="" id="profile-no" name="profile-privacy" value="0" />
+                                                <label for="profile-no" style="position: relative; bottom: 3px;left: 5px;">APPEAR IN POST ONLY DON’T APPEAR IN PROFESSIONAL PROFILE</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-md-12-->
+                                    </div>
+                                </div>
+
+                            </section>
+
+                            <section id="section-jobs">
+
+                                <h3>More Information</h3>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-type">Jobs Type</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" id="jobs-type" name="jobs-type">
+                                                <option value="full_time">Full Time</option>
+                                                <option value="part_time">Part Type</option>
+                                                <option value="remote">Remote</option>
+                                            </select>
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-status">Jobs Status</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" id="jobs-status" name="jobs-status">
+                                                <option value="contract">Contract</option>
+                                                <option value="temp">Temp</option>
+                                                <option value="perm">Perm</option>
+                                                <option value="temp_to_perm">Temp to Perm</option>
+                                                <option value="contract_to_hire">Contract to Hire</option>
+                                                <option value="intern">Intern</option>
+                                            </select>
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-industry">Jobs Industry</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" id="jobs-industry" name="jobs-industry">
+                                                <option value="agriculture_n_food">Agriculture &amp; Food</option>
+                                                <option value="architecture_n_construction">Architecture &amp; Construction</option>
+                                                <option value="audio_video_technology_n_communications">Audio/Video Technology &amp; Communications</option>
+                                                <option value="accounting_n_finance">Accounting &amp; Finance</option>
+                                                <option value="arts_n_culture">Arts &amp; Culture</option>
+                                                <option value="business_management_n_administration">Business Management &amp; Administration</option>
+                                                <option value="construction">Construction</option>
+                                                <option value="chemcials">Chemcials</option>
+                                                <option value="consumer_services">Consumer Services</option>
+                                                <option value="defense">Defense</option>
+                                                <option value="education_n_training">Education &amp; Training</option>
+                                                <option value="government_n_public_administration">Government &amp; Public Administration</option>
+                                                <option value="health_science">Health Science</option>
+                                                <option value="hospitality_n_tourism">Hospitality &amp; Tourism</option>
+                                                <option value="human_services_pharma_n_biotech">Human Services, Pharma &amp; Biotech</option>
+                                                <option value="home_interior">Home Interior</option>
+                                                <option value="home_exterior">Home Exterior</option>
+                                                <option value="information_technology">Information Technology</option>
+                                                <option value="telecommunication">Telecommunication</option>
+                                                <option value="leisure_n_hospitality">Leisure &amp; Hospitality</option>
+                                                <option value="legal_n_taxation">Legal &amp; Taxation</option>
+                                                <option value="law_public_safety_corrections_n_security">Law, Public Safety, Corrections &amp; Security</option>
+                                                <option value="manufacturing">Manufacturing</option>
+                                                <option value="marketing_n_sales">Marketing &amp; Sales</option>
+                                                <option value="media_n_entertainment">Media &amp; Entertainment</option>
+                                                <option value="natural_resources_n_mining">Natural resources &amp; Mining</option>
+                                                <option value="real_estate">Reak Estate</option>
+                                                <option value="repair_n_maintainence">Repair &amp; Maintainence</option>
+                                                <option value="retaurants">Retaurants</option>
+                                                <option value="not_for_profit">Not for Profit</option>
+                                                <option value="professional_n_business_services">Professional &amp; Business Services</option>
+                                                <option value="other_services">Other Services</option>
+                                                <option value="retail_wholesale_n_distributions">Retail, Wholesale &amp; Distributions</option>
+                                                <option value="science_technology_engineering_n_mathematics">Science, Technology, Engineering &amp; Mathematics</option>
+                                                <option value="sports">Sports</option>
+                                                <option value="transportation_distribution_n_logistics">Transportation, Distribution &amp; Logistics</option>
+                                                <option value="utility">Utility</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-function">Jobs Function</label>
+
+                                            <select class="form-control selectpicker" data-dropup-auto="false" data-size="8" id="jobs-function" name="jobs-function">
+                                                <option value="accounting_careers">Accounting Careers</option>
+                                                <option value="administrative_careers">Administrative Careers</option>
+                                                <option value="advertising_careers">Advertising Careers</option>
+                                                <option value="aeronautics_careers">Aeronautics Careers</option>
+                                                <option value="agriculture_n_fishing_careers">Agriculture &amp; Fishing Careers</option>
+                                                <option value="animal_services_careers">Animal Services Careers</option>
+                                                <option value="automotive_careers">Automotive Careers</option>
+                                                <option value="banking_careers">Banking Careers</option>
+                                                <option value="biotechnology_careers">Biotechnology Careers</option>
+                                                <option value="business_careers">Business Careers</option>
+                                                <option value="charity_careers">Charity Careers</option>
+                                                <option value="construction_careers">Construction Careers</option>
+                                                <option value="creative_design_careers">Creative Design Careers</option>
+                                                <option value="customer_service_careers">Customer Service Careers</option>
+                                                <option value="editorial_careers">Editorial Careers</option>
+                                                <option value="education_careers">Education Careers</option>
+                                                <option value="energy_careers">Energy Careers</option>
+                                                <option value="engineering_careers">Engineering Careers</option>
+                                                <option value="environmental_careers">Environmental Careers</option>
+                                                <option value="executive_careers">Executive Careers</option>
+                                                <option value="finance_careers">Finance Careers</option>
+                                                <option value="food_service_careers">Food Service Careers</option>
+                                                <option value="government_careers">Government Careers</option>
+                                                <option value="healthcare_careers">Healthcare Careers</option>
+                                                <option value="hospitality_careers">Hospitality Careers</option>
+                                                <option value="human_resource_careers">Human Resource Careers</option>
+                                                <option value="human_services_careers">Human Services Careers</option>
+                                                <option value="information_technology_careers">Information Technology Careers</option>
+                                                <option value="insurance_careers">Insurance Careers</option>
+                                                <option value="international_careers">International Careers</option>
+                                                <option value="internet_careers">Internet Careers</option>
+                                                <option value="language_translator_careers">Language Translator Careers</option>
+                                                <option value="legal_careers">Legal Careers</option>
+                                                <option value="logistic_careers">Logistic Careers</option>
+                                                <option value="maintenance_careers">Maintenance Careers</option>
+                                                <option value="manufacturing_careers">Manufacturing Careers</option>
+                                                <option value="marketing_careers">Marketing Careers</option>
+                                                <option value="media_careers">Media Careers</option>
+                                                <option value="military_careers">Military Careers</option>
+                                                <option value="overseas_careers">Overseas Careers</option>
+                                                <option value="part_time_careers">Part Time Careers</option>
+                                                <option value="personal_service_careers">Personal Service Careers</option>
+                                                <option value="production_n_operations_careers">Production &amp; Operations Careers</option>
+                                                <option value="project_management_careers">Project Management Careers</option>
+                                                <option value="quality_assurance_careers">Quality Assurance Careers</option>
+                                                <option value="real_estate_careers">Real Estate Careers</option>
+                                                <option value="religious_careers">Religious Careers</option>
+                                                <option value="research_n_development_careers">Research &amp; Development Careers</option>
+                                                <option value="retail_careers">Retail Careers</option>
+                                                <option value="sales_careers">Sales Careers</option>
+                                                <option value="science_careers">Science Careers</option>
+                                                <option value="security_careers">Security Careers</option>
+                                                <option value="skilled_trades_careers">Skilled Trades Careers</option>
+                                                <option value="sports_careers">Sports Careers</option>
+                                                <option value="technology_careers">Technology Careers</option>
+                                                <option value="telecommunications_careers">Telecommunications Careers</option>
+                                                <option value="transportation_careers">Transportation Careers</option>
+                                                <option value="travel_service_careers">Travel Service Careers</option>
+                                                <option value="web_careers">Web Careers</option>
+                                                <option value="other">Other</option>
+                                            </select>
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-experience">Jobs Experience (In years)</label>
+
+                                            <input type="text" class="form-control" name="jobs-experience" id="jobs-experience" placeholder="Jobs Experience">
+
+                                        </div>
+                                        <!--end form-group-->
+
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-education">Jobs Education</label>
+
+                                            <input type="text" class="form-control" name="jobs-education" id="jobs-education" placeholder="Jobs Education">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-skill">Jobs Skill</label>
+
+                                            <input type="text" class="form-control" name="jobs-skill" id="jobs-skill" placeholder="Jobs Skill">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="jobs-software">Jobs Software</label>
+
+                                            <input type="text" class="form-control" name="jobs-software" id="jobs-software" placeholder="Jobs Software">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                </div>
+
+                                <!--end row-->
+
+                            </section>
+
+                            <section id="section-realty">
+
+                                <h3>More Information</h3>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-bed">Bed</label>
+
+                                            <input type="number" class="form-control" name="realty-bed" id="realty-bed" placeholder="Bed" min="0">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-bath">Bath</label>
+
+                                            <input type="number" class="form-control" name="realty-bath" id="realty-bath" placeholder="Bath" min="0">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-lot">Lot</label>
+
+                                            <input type="text" class="form-control" name="realty-lot" id="realty-lot" placeholder="Lot">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-sewerage">Sewerage</label>
+
+                                            <input type="text" class="form-control" name="realty-sewerage" id="realty-sewerage" placeholder="Sewerage">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-water">Water</label>
+
+                                            <input type="text" class="form-control" name="realty-water" id="realty-water" placeholder="Water">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-gas">Gas</label>
+
+                                            <input type="text" class="form-control" name="realty-gas" id="realty-gas" placeholder="Gas">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-tax">Tax</label>
+
+                                            <input type="number" class="form-control" name="realty-tax" id="realty-tax" placeholder="Tax" min="0">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="realty-mls">MLS</label>
+
+                                            <input type="text" class="form-control" name="realty-mls" id="realty-mls" placeholder="MLS">
+
+                                        </div>
+                                        <!--end form-group-->
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                </div>
+
+                                <!--end row-->
+
+                            </section>
+
+                            <section id="section-social">
+
+                                <h3>Social Information</h3>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="social-facebook">Facebook</label>
+
+                                            <input type="text" class="form-control" name="social-facebook" id="social-facenook" placeholder="Facebook Link" />
+
+                                        </div>
+                                        <!--end form-group-->
+
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="social-linkedin">Linkedin</label>
+
+                                            <input type="text" class="form-control" name="social-linkedin" id="social-linkedin" placeholder="Linkedin Link" />
+
+                                        </div>
+                                        <!--end form-group-->
+
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="social-twitter">Twitter</label>
+
+                                            <input type="text" class="form-control" name="social-twitter" id="social-twitter" placeholder="Twitter Link" />
+
+                                        </div>
+                                        <!--end form-group-->
+
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <div class="form-group">
+
+                                            <label for="social-instagram">Instagram</label>
+
+                                            <input type="text" class="form-control" name="social-instagram" id="social-instagram" placeholder="Instagram Link" />
+
+                                        </div>
+                                        <!--end form-group-->
+
+                                    </div>
+                                    <!--end col-md-6-->
+
+                                </div>
+
+                                <!--end row-->
+
+                            </section>
+
+                            <section id="section-gallery">
+
+                                <h3>Gallery</h3>
+
+                                <div class="file-upload-previews"></div>
+
+                                <div class="file-upload">
+
+                                    <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+
+                                    <span>Click or drag images here</span>
+
+                                </div>
+
+                            </section>
+
+                            <hr>
+
+                            <section class="center">
+
+                                <div class="form-group">
+
+                                    <button type="submit" class="btn btn-primary btn-rounded">Submit Listing</button>
+
+                                </div>
+
+                                <!--end form-group-->
+
+                            </section>
+
+                        </form>
+
+                        <!--end form-->
+
+                    </div>
+
+                    <!--end col-md-6-->
+
+                </div>
+
+                <!--end row-->
+
+            </section>
+
+        </div>
+
+        <!--end container-->
+
+    </div>
+
+    <!--end page-content-->
+
+
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-2.2.1.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap-select.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.js"></script>
+
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyAiM_FqkKLI0eup2tuWSJ_1IFneZsVw4ds&libraries=places"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/richmarker-compiled.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jQuery.MultiFile.min.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/custom.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/maps.js"></script>
+
+    <script type="text/javascript">
+        $('#submit-listing-form').on('submit', (function(e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+
+            $("#form-notification").html("");
+
+            if ($("#listing-type option:selected").val() == "not-selected") {
+                $("#form-notification").html("<div class=\"alert alert-danger alert-dismissable\"><a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">×</a><strong>Error ! </strong> Kindly Select any Listing First.....! </div>");
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: formData,
+                    dataType: "json",
+                    contentType: false,
+                    enctype: 'multipart/form-data',
+                    processData: false,
+                    cache: false,
+                    success: function(data) {
+                        if (typeof data.success !== 'undefined') {
+                            $("html, body").animate({
+                                scrollTop: 0
+                            }, "slow");
+                            $("#form-notification").html("<div class=\"alert alert-success alert-dismissable\"><a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">×</a><strong>Success ! </strong>" + data.success + "</div>");
+                        }
+                        if (typeof data.validation_errors !== 'undefined') {
+                            $("html, body").animate({
+                                scrollTop: 0
+                            }, "slow");
+                            $("#form-notification").html("<div class=\"alert alert-danger alert-dismissable\"><a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">×</a><strong>Errors ! </strong>" + data.validation_errors + "</div>");
+                        }
+                    },
+                    error: function(data) {
+                        $("html, body").animate({
+                            scrollTop: 0
+                        }, "slow");
+                        $("#form-notification").html("<div class=\"alert alert-danger alert-dismissable\"><a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">×</a><strong>Error ! </strong> Something went wrong.....!</div>");
+                    }
+                });
+            }
+        }));
+
+        $("#listing-type").on("change", function() {
+            $("#form-notification").html("");
+
+            /*if( $("#listing-type option:selected").val() == "not-selected" )
+        {
+            $("#submit-listing-form").removeAttr("action");
+
+            $("#div-title").hide();$("#title").removeAttr("required");
+
+            $("#div-events-category").hide();$("#events-category").removeAttr("required");
+
+            $("#div-sales-category").hide();$("#sales-category").removeAttr("required");
+
+            $("#div-coupons-category").hide();$("#coupons-category").removeAttr("required");
+
+            $("#div-service-require-category").hide();$("#service-require-category").removeAttr("required");
+
+            $("#div-service-providers-category").hide();$("#service-providers-category").removeAttr("required");
+
+            $("#div-realty-category").hide();$("#realty-category").removeAttr("required");
+
+            $("#div-nearby-stores-category").hide();$("#nearby-stores-category").removeAttr("required");
+            
+            $("#div-attractions-category").hide();$("#attractions-category").removeAttr("required");
+
+            $("#div-hire-a-resource-category").hide();$("#hire-a-resource-category").removeAttr("required");
+
+            $("#div-tickets-category").hide();$("#tickets-category").removeAttr("required");
+
+            $("#div-learnings-category").hide();$("#learnings-category").removeAttr("required");
+
+            $("#div-restaurants-category").hide();$("#restaurants-category").removeAttr("required");
+
+			$("#div-rent-category").hide();$("#rent-category").removeAttr("required");
+            
+			$("#div-business-sales-category").hide();$("#business-sales-category").removeAttr("required");
+
+        	$("#div-short-term-hiring-category").hide();$("#short-term-hiring-category").removeAttr("required");
+
+            $("#div-business-name").hide();$("#business-name").removeAttr("required");
+
+            $("#div-tags").hide();$("#tags").removeAttr("required");
+
+            $("#div-openhouse-date").hide();$("#openhouse-date").removeAttr("required");
+
+            $("#div-date").hide();$("#date").removeAttr("required");
+
+            $("#div-start-date").hide();$("#start-date").removeAttr("required");
+
+            $("#div-finish-date").hide();$("#finish-date").removeAttr("required");
+
+            $("#div-time-start").hide();$("#time-start").removeAttr("required");
+
+            $("#div-time-finish").hide();$("#time-finish").removeAttr("required");
+
+            $("#div-open-hour").hide();$("#open-hour").removeAttr("required");
+
+            $("#div-close-hour").hide();$("#close-hour").removeAttr("required");
+
+            $("#div-details").hide();$("#details").removeAttr("required");
+
+            $("#div-job-description").hide();$("#job-description").removeAttr("required");
+
+            $("#div-price").hide();$("#price").removeAttr("required");
+
+            $("#div-salary").hide();$("#salary").removeAttr("required");
+
+            $("#div-hourly-rate").hide();$("#hourly-rate").removeAttr("required");
+
+            $("#div-original-price").hide();$("#original-price").removeAttr("required");
+            
+            $("#div-discounted-price").hide();$("#discounted-price").removeAttr("required");
+
+            $("#section-address").hide();
+            
+            $("#zipcode").removeAttr("required");
+            $("#contact-name").removeAttr("required");
+            $("#contact-number").removeAttr("required");
+            $("#contact-email").removeAttr("required");
+            $("#contact-website").removeAttr("required");
+
+            $("#section-jobs").hide();
+            
+            $("#jobs-type").removeAttr("required");
+            $("#jobs-status").removeAttr("required");
+            $("#jobs-experience").removeAttr("required");
+            $("#jobs-education").removeAttr("required");
+            $("#jobs-skill").removeAttr("required");
+            $("#jobs-software").removeAttr("required");
+
+            $("#section-realty").hide();
+
+            $("#realty-bed").removeAttr("required");
+            $("#realty-bath").removeAttr("required");
+            $("#realty-lot").removeAttr("required");
+            $("#realty-sewerage").removeAttr("required");
+            $("#realty-water").removeAttr("required");
+            $("#realty-gas").removeAttr("required");
+            $("#realty-tax").removeAttr("required");
+            $("#realty-mls").removeAttr("required");
+
+			$("#section-social").hide();
+
+			$("#social-facebook").removeAttr("required");
+			$("#social-twitter").removeAttr("required");
+			$("#social-linkedin").removeAttr("required");
+			$("#social-instagram").removeAttr("required");
+
+			$("#div-price-duration").hide();$("#price-duration").removeAttr("required");
+			
+			$("#div-address").hide();$("#address").removeAttr("required");
+			
+			$("#div-amount").hide();$("#amount").removeAttr("required");
+
+			$("#div-work-details").hide();$("#work-details").removeAttr("required");
+			$("#div-expected-hours").hide();$("#expected-hours").removeAttr("required");
+			$("#div-pay").hide();$("#pay").removeAttr("required");
+			$("#div-pay-duration").hide();$("#pay-duration").removeAttr("required");
+
+            $("#section-gallery").hide();
+
+        }
+        else */
+            if ($("#listing-type option:selected").val() == "events") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Events/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+
+                $("#div-events-category").show();
+                $("#events-category").removeAttr("required");
+                $("#events-category").attr("required", "required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").hide();
+                $("#tags").removeAttr("required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").show();
+                $("#date").removeAttr("required");
+                $("#date").attr("required", "required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").show();
+                $("#time-start").removeAttr("required");
+                $("#time-start").attr("required", "required");
+                $("#div-time-finish").show();
+                $("#time-finish").removeAttr("required");
+                $("#time-finish").attr("required", "required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").show();
+                $("#price").removeAttr("required");
+                $("#price").attr("required", "required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "garage-sales") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>GarageSales/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").hide();
+                $("#tags").removeAttr("required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").show();
+                $("#date").removeAttr("required");
+                $("#date").attr("required", "required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").show();
+                $("#time-start").removeAttr("required");
+                $("#time-start").attr("required", "required");
+                $("#div-time-finish").show();
+                $("#time-finish").removeAttr("required");
+                $("#time-finish").attr("required", "required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "sales") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Sales/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").show();
+                $("#sales-category").removeAttr("required");
+                $("#sales-category").attr("required", "required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").show();
+                $("#price").removeAttr("required");
+                $("#price").attr("required", "required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "coupons") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Coupons/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").show();
+                $("#coupons-category").removeAttr("required");
+                $("#coupons-category").attr("required", "required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").show();
+                $("#start-date").removeAttr("required");
+                $("#start-date").attr("required", "required");
+                $("#div-finish-date").show();
+                $("#finish-date").removeAttr("required");
+                $("#finish-date").attr("required", "required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").show();
+                $("#original-price").removeAttr("required");
+                $("#original-price").attr("required", "required");
+                $("#div-discounted-price").show();
+                $("#discounted-price").removeAttr("required");
+                $("#discounted-price").attr("required", "required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "jobs") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Jobs/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").show();
+                $("#date").removeAttr("required");
+                $("#date").attr("required", "required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").hide();
+                $("#details").removeAttr("required");
+                $("#div-job-description").show();
+                $("#job-description").removeAttr("required");
+                $("#job-description").attr("required", "required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").show();
+                $("#salary").removeAttr("required");
+                $("#salary").attr("required", "required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").show();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-type").attr("required", "required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-status").attr("required", "required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-experience").attr("required", "required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-education").attr("required", "required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-skill").attr("required", "required");
+                $("#jobs-software").removeAttr("required");
+                $("#jobs-software").attr("required", "required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "service-require") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>ServiceRequire/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").show();
+                $("#service-require-category").removeAttr("required");
+                $("#service-require-category").attr("required", "required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").show();
+                $("#date").removeAttr("required");
+                $("#date").attr("required", "required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").hide();
+                $("#details").removeAttr("required");
+                $("#div-job-description").show();
+                $("#job-description").removeAttr("required");
+                $("#job-description").attr("required", "required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "service-providers") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>ServiceProviders/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").show();
+                $("#service-providers-category").removeAttr("required");
+                $("#service-providers-category").attr("required", "required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").hide();
+                $("#details").removeAttr("required");
+                $("#div-job-description").show();
+                $("#job-description").removeAttr("required");
+                $("#job-description").attr("required", "required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "realty") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>realty/insert");
+
+                $("#div-title").hide();
+                $("#title").removeAttr("required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").show();
+                $("#realty-category").removeAttr("required");
+                $("#realty-category").attr("required", "required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-openhouse-date").show();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").show();
+                $("#price").removeAttr("required");
+                $("#price").attr("required", "required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").show();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bed").attr("required", "required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-bath").attr("required", "required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-lot").attr("required", "required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-sewerage").attr("required", "required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-water").attr("required", "required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-gas").attr("required", "required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-tax").attr("required", "required");
+                $("#realty-mls").removeAttr("required");
+                $("#realty-mls").attr("required", "required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "nearby-stores") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>NearbyStores/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").show();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#nearby-stores-category").attr("required", "required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").hide();
+                $("#currency").removeAttr("required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "attractions") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Attractions/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").show();
+                $("#attractions-category").removeAttr("required");
+                $("#attractions-category").attr("required", "required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "hire-a-resource") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>HireAResource/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").show();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#hire-a-resource-category").attr("required", "required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").show();
+                $("#hourly-rate").removeAttr("required");
+                $("#hourly-rate").attr("required", "required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+                $("#hire-a-resource-second-language").attr("required", "required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "tickets") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Tickets/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").show();
+                $("#tickets-category").removeAttr("required");
+                $("#tickets-category").attr("required", "required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").show();
+                $("#date").removeAttr("required");
+                $("#date").attr("required", "required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").show();
+                $("#price").removeAttr("required");
+                $("#price").attr("required", "required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "store-closures") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>StoreClosures/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").hide();
+                $("#currency").removeAttr("required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "learnings") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Learnings/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").show();
+                $("#learnings-category").removeAttr("required");
+                $("#learnings-category").attr("required", "required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").hide();
+                $("#currency").removeAttr("required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "discards") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Discards/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").hide();
+                $("#currency").removeAttr("required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "restaurants") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Restaurants/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").show();
+                $("#restaurants-category").removeAttr("required");
+                $("#restaurants-category").attr("required", "required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").hide();
+                $("#currency").removeAttr("required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+
+                $("#section-social").hide();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-instagram").removeAttr("required");
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "rent") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Rent/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").show();
+                $("#rent-category").removeAttr("required");
+                $("#rent-category").attr("required", "required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").show();
+                $("#price").removeAttr("required");
+                $("#price").attr("required", "required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").show();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-facebook").attr("required", "required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-twitter").attr("required", "required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-linkedin").attr("required", "required");
+                $("#social-instagram").removeAttr("required");
+                $("#social-instagram").attr("required", "required");
+
+
+                $("#div-price-duration").show();
+                $("#price-duration").removeAttr("required");
+                $("#price-duration").attr("required", "required");
+
+                $("#div-address").show();
+                $("#address").removeAttr("required");
+                $("#address").attr("required", "required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+
+            } else if ($("#listing-type option:selected").val() == "funding") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Funding/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").show();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-facebook").attr("required", "required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-twitter").attr("required", "required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-linkedin").attr("required", "required");
+                $("#social-instagram").removeAttr("required");
+                $("#social-instagram").attr("required", "required");
+
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").show();
+                $("#amount").removeAttr("required");
+                $("#amount").attr("required", "required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+
+            } else if ($("#listing-type option:selected").val() == "business-sales") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>BusinessSales/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").show();
+                $("#business-sales-category").removeAttr("required");
+                $("#business-sales-category").attr("required", "required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").show();
+                $("#details").removeAttr("required");
+                $("#details").attr("required", "required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").show();
+                $("#price").removeAttr("required");
+                $("#price").attr("required", "required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").show();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-facebook").attr("required", "required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-twitter").attr("required", "required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-linkedin").attr("required", "required");
+                $("#social-instagram").removeAttr("required");
+                $("#social-instagram").attr("required", "required");
+
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+            } else if ($("#listing-type option:selected").val() == "short-term-hiring") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>ShortTermHiring/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").show();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#short-term-hiring-category").attr("required", "required");
+                $("#div-business-name").show();
+                $("#business-name").removeAttr("required");
+                $("#business-name").attr("required", "required");
+                $("#div-tags").show();
+                $("#tags").removeAttr("required");
+                $("#tags").attr("required", "required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").show();
+                $("#open-hour").removeAttr("required");
+                $("#open-hour").attr("required", "required");
+                $("#div-close-hour").show();
+                $("#close-hour").removeAttr("required");
+                $("#close-hour").attr("required", "required");
+                $("#div-details").hide();
+                $("#details").removeAttr("required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").show();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").show();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-facebook").attr("required", "required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-twitter").attr("required", "required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-linkedin").attr("required", "required");
+                $("#social-instagram").removeAttr("required");
+                $("#social-instagram").attr("required", "required");
+
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").show();
+                $("#address").removeAttr("required");
+                $("#address").attr("required", "required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").show();
+                $("#work-details").removeAttr("required");
+                $("#work-details").attr("required", "required");
+                $("#div-expected-hours").show();
+                $("#expected-hours").removeAttr("required");
+                $("#expected-hours").attr("required", "required");
+                $("#div-pay").show();
+                $("#pay").removeAttr("required");
+                $("#pay").attr("required", "required");
+                $("#div-pay-duration").show();
+                $("#pay-duration").removeAttr("required");
+                $("#pay-duration").attr("required", "required");
+
+                $("#section-match-friends").hide();
+
+                $("#age").removeAttr("required");
+                $("#gender").removeAttr("required");
+                $("#about-yourself").removeAttr("required");
+                $("#occupation").removeAttr("required");
+                $("#religion").removeAttr("required");
+                $("#height").removeAttr("required");
+                $("#ethnicity").removeAttr("required");
+                $("#body-type").removeAttr("required");
+                $("#education").removeAttr("required");
+                $("#ideal-match").removeAttr("required");
+                $("#relationship-history").removeAttr("required");
+                $("#lifestyle").removeAttr("required");
+
+            } else if ($("#listing-type option:selected").val() == "match-friends") {
+                $("#submit-listing-form").removeAttr("action");
+                $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>MatchFriends/insert");
+
+                $("#div-title").show();
+                $("#title").removeAttr("required");
+                $("#title").attr("required", "required");
+                $("#div-events-category").hide();
+                $("#events-category").removeAttr("required");
+                $("#div-sales-category").hide();
+                $("#sales-category").removeAttr("required");
+                $("#div-coupons-category").hide();
+                $("#coupons-category").removeAttr("required");
+                $("#div-service-require-category").hide();
+                $("#service-require-category").removeAttr("required");
+                $("#div-service-providers-category").hide();
+                $("#service-providers-category").removeAttr("required");
+                $("#div-realty-category").hide();
+                $("#realty-category").removeAttr("required");
+                $("#div-nearby-stores-category").hide();
+                $("#nearby-stores-category").removeAttr("required");
+                $("#div-attractions-category").hide();
+                $("#attractions-category").removeAttr("required");
+                $("#div-hire-a-resource-category").hide();
+                $("#hire-a-resource-category").removeAttr("required");
+                $("#div-tickets-category").hide();
+                $("#tickets-category").removeAttr("required");
+                $("#div-learnings-category").hide();
+                $("#learnings-category").removeAttr("required");
+                $("#div-restaurants-category").hide();
+                $("#restaurants-category").removeAttr("required");
+                $("#div-rent-category").hide();
+                $("#rent-category").removeAttr("required");
+                $("#div-business-sales-category").hide();
+                $("#business-sales-category").removeAttr("required");
+                $("#div-short-term-hiring-category").hide();
+                $("#short-term-hiring-category").removeAttr("required");
+                $("#div-business-name").hide();
+                $("#business-name").removeAttr("required");
+                $("#div-tags").hide();
+                $("#tags").removeAttr("required");
+                $("#div-openhouse-date").hide();
+                $("#openhouse-date").removeAttr("required");
+                $("#div-date").hide();
+                $("#date").removeAttr("required");
+                $("#div-start-date").hide();
+                $("#start-date").removeAttr("required");
+                $("#div-finish-date").hide();
+                $("#finish-date").removeAttr("required");
+                $("#div-time-start").hide();
+                $("#time-start").removeAttr("required");
+                $("#div-time-finish").hide();
+                $("#time-finish").removeAttr("required");
+                $("#div-open-hour").hide();
+                $("#open-hour").removeAttr("required");
+                $("#div-close-hour").hide();
+                $("#close-hour").removeAttr("required");
+                $("#div-details").hide();
+                $("#details").removeAttr("required");
+                $("#div-job-description").hide();
+                $("#job-description").removeAttr("required");
+                $("#div-price").hide();
+                $("#price").removeAttr("required");
+                $("#div-salary").hide();
+                $("#salary").removeAttr("required");
+                $("#div-hourly-rate").hide();
+                $("#hourly-rate").removeAttr("required");
+                $("#div-original-price").hide();
+                $("#original-price").removeAttr("required");
+                $("#div-discounted-price").hide();
+                $("#discounted-price").removeAttr("required");
+
+                $("#section-profile-option").show();
+                $("#section-address").show();
+
+                $("#zipcode").removeAttr("required");
+                $("#zipcode").attr("required", "required");
+                $("#contact-name").removeAttr("required");
+                $("#contact-name").attr("required", "required");
+                $("#contact-number").removeAttr("required");
+                $("#contact-number").attr("required", "required");
+                $("#contact-email").removeAttr("required");
+                $("#contact-email").attr("required", "required");
+                $("#contact-website").removeAttr("required");
+                $("#contact-website").attr("required", "required");
+
+                $("#section-jobs").hide();
+
+                $("#jobs-type").removeAttr("required");
+                $("#jobs-status").removeAttr("required");
+                $("#jobs-experience").removeAttr("required");
+                $("#jobs-education").removeAttr("required");
+                $("#jobs-skill").removeAttr("required");
+                $("#jobs-software").removeAttr("required");
+
+                $("#section-realty").hide();
+
+                $("#realty-bed").removeAttr("required");
+                $("#realty-bath").removeAttr("required");
+                $("#realty-lot").removeAttr("required");
+                $("#realty-sewerage").removeAttr("required");
+                $("#realty-water").removeAttr("required");
+                $("#realty-gas").removeAttr("required");
+                $("#realty-tax").removeAttr("required");
+                $("#realty-mls").removeAttr("required");
+
+                $("#section-gallery").show();
+
+
+                $("#div-currency").hide();
+                $("#currency").removeAttr("required");
+                $("#currency").attr("required", "required");
+
+
+                $("#div-hire-a-resource-second-language").show();
+                $("#language-hide").hide();
+                $("#hire-a-resource-second-language").removeAttr("required");
+
+                $("#section-social").show();
+
+                $("#social-facebook").removeAttr("required");
+                $("#social-facebook").attr("required", "required");
+                $("#social-twitter").removeAttr("required");
+                $("#social-twitter").attr("required", "required");
+                $("#social-linkedin").removeAttr("required");
+                $("#social-linkedin").attr("required", "required");
+                $("#social-instagram").removeAttr("required");
+                $("#social-instagram").attr("required", "required");
+
+
+                $("#div-price-duration").hide();
+                $("#price-duration").removeAttr("required");
+
+                $("#div-address").hide();
+                $("#address").removeAttr("required");
+
+                $("#div-amount").hide();
+                $("#amount").removeAttr("required");
+
+                $("#div-work-details").hide();
+                $("#work-details").removeAttr("required");
+                $("#div-expected-hours").hide();
+                $("#expected-hours").removeAttr("required");
+                $("#div-pay").hide();
+                $("#pay").removeAttr("required");
+                $("#div-pay-duration").hide();
+                $("#pay-duration").removeAttr("required");
+
+                $("#section-match-friends").show();
+
+                $("#age").removeAttr("required");
+                $("#age").attr("required", "required");
+                $("#gender").removeAttr("required");
+                $("#gender").attr("required", "required");
+                $("#about-yourself").removeAttr("required");
+                $("#about-yourself").attr("required", "required");
+                $("#occupation").removeAttr("required");
+                $("#occupation").attr("required", "required");
+                $("#religion").removeAttr("required");
+                $("#religion").attr("required", "required");
+                $("#height").removeAttr("required");
+                $("#height").attr("required", "required");
+                $("#ethnicity").removeAttr("required");
+                $("#ethnicity").attr("required", "required");
+                $("#body-type").removeAttr("required");
+                $("#body-type").attr("required", "required");
+                $("#education").removeAttr("required");
+                $("#education").attr("required", "required");
+                $("#ideal-match").removeAttr("required");
+                $("#ideal-match").attr("required", "required");
+                $("#relationship-history").removeAttr("required");
+                $("#relationship-history").attr("required", "required");
+                $("#lifestyle").removeAttr("required");
+                $("#lifestyle").attr("required", "required");
+            }
+
+        });
+
+        $(document).ready(function() {
+            $("#submit-listing-form").removeAttr("action");
+            $("#submit-listing-form").attr("action", "<?php echo base_url(); ?>Events/insert");
+
+            $("#div-title").show();
+            $("#title").removeAttr("required");
+            $("#title").attr("required", "required");
+
+            $("#div-currency").show();
+            $("#currency").removeAttr("required");
+            $("#currency").attr("required", "required");
+
+            $("#div-events-category").show();
+            $("#events-category").removeAttr("required");
+            $("#events-category").attr("required", "required");
+            $("#div-sales-category").hide();
+            $("#sales-category").removeAttr("required");
+            $("#div-coupons-category").hide();
+            $("#coupons-category").removeAttr("required");
+            $("#div-service-require-category").hide();
+            $("#service-require-category").removeAttr("required");
+            $("#div-service-providers-category").hide();
+            $("#service-providers-category").removeAttr("required");
+            $("#div-realty-category").hide();
+            $("#realty-category").removeAttr("required");
+            $("#div-nearby-stores-category").hide();
+            $("#nearby-stores-category").removeAttr("required");
+            $("#div-attractions-category").hide();
+            $("#attractions-category").removeAttr("required");
+            $("#div-hire-a-resource-category").hide();
+            $("#hire-a-resource-category").removeAttr("required");
+            $("#div-tickets-category").hide();
+            $("#tickets-category").removeAttr("required");
+            $("#div-learnings-category").hide();
+            $("#learnings-category").removeAttr("required");
+            $("#div-restaurants-category").hide();
+            $("#restaurants-category").removeAttr("required");
+            $("#div-rent-category").hide();
+            $("#rent-category").removeAttr("required");
+            $("#div-business-sales-category").hide();
+            $("#business-sales-category").removeAttr("required");
+            $("#div-short-term-hiring-category").hide();
+            $("#short-term-hiring-category").removeAttr("required");
+            $("#div-business-name").hide();
+            $("#business-name").removeAttr("required");
+            $("#div-tags").hide();
+            $("#tags").removeAttr("required");
+            $("#div-openhouse-date").hide();
+            $("#openhouse-date").removeAttr("required");
+            $("#div-date").show();
+            $("#date").removeAttr("required");
+            $("#date").attr("required", "required");
+            $("#div-start-date").hide();
+            $("#start-date").removeAttr("required");
+            $("#div-finish-date").hide();
+            $("#finish-date").removeAttr("required");
+            $("#div-time-start").show();
+            $("#time-start").removeAttr("required");
+            $("#time-start").attr("required", "required");
+            $("#div-time-finish").show();
+            $("#time-finish").removeAttr("required");
+            $("#time-finish").attr("required", "required");
+            $("#div-open-hour").hide();
+            $("#open-hour").removeAttr("required");
+            $("#div-close-hour").hide();
+            $("#close-hour").removeAttr("required");
+            $("#div-details").show();
+            $("#details").removeAttr("required");
+            $("#details").attr("required", "required");
+            $("#div-job-description").hide();
+            $("#job-description").removeAttr("required");
+            $("#div-price").show();
+            $("#price").removeAttr("required");
+            $("#price").attr("required", "required");
+            $("#div-salary").hide();
+            $("#salary").removeAttr("required");
+            $("#div-hourly-rate").hide();
+            $("#hourly-rate").removeAttr("required");
+            $("#div-original-price").hide();
+            $("#original-price").removeAttr("required");
+            $("#div-discounted-price").hide();
+            $("#discounted-price").removeAttr("required");
+
+            $("#section-profile-option").show();
+            $("#section-address").show();
+
+            $("#zipcode").removeAttr("required");
+            $("#zipcode").attr("required", "required");
+            $("#contact-name").removeAttr("required");
+            $("#contact-name").attr("required", "required");
+            $("#contact-number").removeAttr("required");
+            $("#contact-number").attr("required", "required");
+            $("#contact-email").removeAttr("required");
+            $("#contact-email").attr("required", "required");
+            $("#contact-website").removeAttr("required");
+            $("#contact-website").attr("required", "required");
+
+            $("#section-jobs").hide();
+
+            $("#jobs-type").removeAttr("required");
+            $("#jobs-status").removeAttr("required");
+            $("#jobs-experience").removeAttr("required");
+            $("#jobs-education").removeAttr("required");
+            $("#jobs-skill").removeAttr("required");
+            $("#jobs-software").removeAttr("required");
+
+            $("#section-realty").hide();
+
+            $("#realty-bed").removeAttr("required");
+            $("#realty-bath").removeAttr("required");
+            $("#realty-lot").removeAttr("required");
+            $("#realty-sewerage").removeAttr("required");
+            $("#realty-water").removeAttr("required");
+            $("#realty-gas").removeAttr("required");
+            $("#realty-tax").removeAttr("required");
+            $("#realty-mls").removeAttr("required");
+
+
+            $("#section-gallery").show();
+
+            $("#div-hire-a-resource-second-language").show();
+            $("#language-hide").hide();
+            $("#hire-a-resource-second-language").removeAttr("required");
+
+            var _latitude = 40.7344458;
+            var _longitude = -73.86704922;
+            var element = "listing-map";
+            var lat_element = "listing-latitude";
+            var long_element = "listing-longitude";
+            simpleMap(lat_element, _latitude, long_element, _longitude, element, true);
+
+            $("#section-social").hide();
+
+            $("#social-facebook").removeAttr("required");
+            $("#social-twitter").removeAttr("required");
+            $("#social-linkedin").removeAttr("required");
+            $("#social-instagram").removeAttr("required");
+
+
+            $("#div-price-duration").hide();
+            $("#price-duration").removeAttr("required");
+
+            $("#div-address").hide();
+            $("#address").removeAttr("required");
+
+            $("#div-amount").hide();
+            $("#amount").removeAttr("required");
+
+            $("#div-work-details").hide();
+            $("#work-details").removeAttr("required");
+            $("#div-expected-hours").hide();
+            $("#expected-hours").removeAttr("required");
+            $("#div-pay").hide();
+            $("#pay").removeAttr("required");
+            $("#div-pay-duration").hide();
+            $("#pay-duration").removeAttr("required");
+
+            $("#section-match-friends").hide();
+
+            $("#age").removeAttr("required");
+            $("#gender").removeAttr("required");
+            $("#about-yourself").removeAttr("required");
+            $("#occupation").removeAttr("required");
+            $("#religion").removeAttr("required");
+            $("#height").removeAttr("required");
+            $("#ethnicity").removeAttr("required");
+            $("#body-type").removeAttr("required");
+            $("#education").removeAttr("required");
+            $("#ideal-match").removeAttr("required");
+            $("#relationship-history").removeAttr("required");
+            $("#lifestyle").removeAttr("required");
+
+
+        });
+    </script>

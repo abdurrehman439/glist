@@ -1,0 +1,221 @@
+/* Appsy Price area css
+============================================================================================ */
+.appsy_price_area{
+    background: #f7f7f7;
+    padding: 105px 0px;
+}
+.price_item{
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 8.55px 0.45px rgba(164, 164, 164, 0.75);
+    padding-bottom: 50px;
+    h3{
+        font-size: 24px;
+        font-family: $mon;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $baseColor;
+        background: #f7f7f7;
+        padding: 36px 0px;
+        border-bottom: 1px solid #cecccc;
+    }
+    .price_rate{
+        height: 172px;
+        width: 172px;
+        border-radius: 50%;
+        background: $baseColor;
+        margin: 25px auto 30px;
+        text-align: center;
+        position: relative;
+        h4{
+            font-size: 39.51px;
+            color: #fff;
+            font-weight: 600;
+            font-family: $mon;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            top: 48%;
+            transform: translateY(-50%);
+            span{
+                display: block;
+                font-size: 13.17px;
+                font-weight: 400;
+                padding-top: 5px;
+            }
+        }
+    }
+    .price_list{
+        .price_list_item{
+            padding-bottom: 20px;
+            h5{
+                font-size: 14px;
+                color: #6b6b6b;
+                font-family: $op;
+                padding-bottom: 4px;
+            }
+            h6{
+                font-size: 19.44px;
+                font-family: $op;
+                font-weight: 600;
+                color: $baseColor;
+                i{
+                    padding-right: 4px;
+                }
+            }
+            &.item_hide{
+                h5{
+                    color: #dddddd;
+                }    
+                h6{
+                    color: #dddddd;
+                }
+            }
+        }
+    }
+    .store_btn{
+        margin-top: 10px;
+        box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+        font-weight: 400;
+    }
+    &.premium{
+        border-top: 4px solid $baseColor;
+        h3{
+            padding: 34px 0px;
+        }
+    }
+    &.price_style2{
+        position: relative;
+        &:before{
+            content: "";
+            background: $baseColor;
+            width: 100%;
+            height: 4px;
+            left: 0px;
+            top: 0px;
+            display: block;
+            opacity: 0;
+            @include transition;
+        }
+        h3{
+            background: #fff;
+            border-bottom: none;
+        }
+        .price_rate{
+            border-radius: 0px;
+            width: 100%;
+            background: #f7f7f7;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            h4{
+                color: $baseColor;
+            }
+        }
+        .price_list{
+            .price_list_item{
+                h6{
+                    color: $pfont;
+                }
+                &.item_hide{
+                    h6{
+                        color: #ddd;
+                    }
+                }
+            }    
+        }
+        .store_w_btn{
+            border: 1px solid $baseColor;
+            margin-top: 20px;
+        }
+        &:hover{
+            &:before{
+                opacity: 1;
+            }
+        }
+    }
+    &.red_price_item{
+        h3{
+            color: $red;
+        }
+        .price_rate{
+            background: $red;
+            h4{
+                font-size: 39.51px;
+                color: #fff;
+                font-weight: 600;
+                font-family: $mon;
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+                top: 48%;
+                transform: translateY(-50%);
+            }
+        }
+        .price_list{
+            .price_list_item{
+                h6{
+                    color: $red;
+                }
+                &.item_hide{
+                    h5{
+                        color: #dddddd;
+                    }    
+                    h6{
+                        color: #dddddd;
+                    }
+                }
+            }
+        }
+        &.premium{
+            border-top: 4px solid $red;
+            h3{
+                padding: 34px 0px;
+            }
+        }
+    }
+    &.blue_price_item{
+        h3{
+            color: $blue;
+        }
+        .price_rate{
+            background: $blue;
+            h4{
+                font-size: 39.51px;
+                color: #fff;
+                font-weight: 600;
+                font-family: $mon;
+                position: absolute;
+                left: 0px;
+                width: 100%;
+                text-align: center;
+                top: 48%;
+                transform: translateY(-50%);
+            }
+        }
+        .price_list{
+            .price_list_item{
+                h6{
+                    color: $blue;
+                }
+                &.item_hide{
+                    h5{
+                        color: #dddddd;
+                    }    
+                    h6{
+                        color: #dddddd;
+                    }
+                }
+            }
+        }
+        &.premium{
+            border-top: 4px solid $blue;
+            h3{
+                padding: 34px 0px;
+            }
+        }
+    }
+}
+/* End Appsy Price area css
+============================================================================================ */

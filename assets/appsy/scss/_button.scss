@@ -1,0 +1,378 @@
+/* Store BTN area css
+============================================================================================ */
+.store_btn{
+    width: 160px;
+    background: $baseColor;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    margin: auto;
+    color: #fff;
+    font-size: 15px;
+    font-family: $mon;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    i{
+        padding-right: 12px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(255,255,255,1);
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5);
+        border-radius: 4px;
+        z-index: -1;
+    }
+    &:hover{
+        &:before{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        color: $dip;
+    }
+    &.red_store_btn{
+        background: $red;
+        &:hover{
+            color: $red;
+        }
+    }
+    &.blue_store_btn{
+        background: $blue;
+        &:hover{
+            color: $blue;
+        }
+    }
+}
+
+.store_btn_dark{
+    margin-right: 25px;
+    height: 50px;
+    background: #502994;
+    line-height: 50px;
+    border-radius: 0px;
+    &:before{
+        border-radius: 0px;    
+    }
+}
+
+.store_w_btn{
+    width: 160px;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    margin: auto;
+    color: $dip;
+    font-size: 15px;
+    font-family: $mon;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    @include transition;
+    i{
+        padding-right: 12px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: $baseColor;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5);
+        border-radius: 4px;
+        z-index: -1;
+    }
+    &:hover{
+        &:before{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        color: #fff;
+    }
+    &.red_w_store_btn{
+        &:before{
+            background-color: $red;
+        }
+    }
+    &.blue_w_store_btn{
+        &:before{
+            background-color: $blue;
+        }
+    }
+}
+
+.submit_btn{
+    margin-left: 0px;
+    width: 170px;
+    height: 48px;
+    border-radius: 0px;
+    outline: none;
+    background: $baseColor;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: $mon;
+    font-size: 13px;
+    outline: none !important;
+    box-shadow: none !important;
+    @include transition;
+    position: relative;
+    z-index: 2;
+    border-radius: 0px;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(255,255,255,1);
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5);
+        border-radius: 4px;
+        z-index: -1;
+        border-radius: 0px;
+    }
+    &:hover, &:focus{
+        
+        &:before{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        color: $baseColor;
+    }
+    &.red_submit_btn{
+        background: $red;
+        &:hover{
+            color: $red;
+        }
+    }
+    &.blue_submit_btn{
+        background: $blue;
+        &:hover{
+            color: $blue;
+        }
+    }
+}
+.submit_s_btn{
+    margin-left: 0px;
+    width: 170px;
+    height: 48px;
+    border-radius: 0px;
+    outline: none;
+    background-color: $baseColor;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: $mon;
+    font-size: 13px;
+    outline: none !important;
+    box-shadow: none !important;
+    @include transition;
+    position: relative;
+    z-index: 2;
+    border-radius: 0px;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: #502994;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5);
+        border-radius: 4px;
+        z-index: -1;
+        border-radius: 0px;
+    }
+    &:hover, &:focus{
+        &:before{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        color: #fff;
+    }
+    &.red_submit_btn{
+        background: $red;
+        &:before{
+            background: #c61a32;
+        }
+        &:hover{
+            color: #fff;
+            
+        }
+    }
+    &.blue_submit_btn{
+        background: $blue;
+        &:before{
+            background: #005885;
+        }
+        &:hover{
+            color: #fff;
+            
+        }
+    }
+}
+.submit_btn2{
+    margin-left: 0px;
+    width: 100%;
+    height: 50px;
+    border-radius: 0px;
+    outline: none;
+    background: $baseColor;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: $mon;
+    font-size: 13px;
+    outline: none !important;
+    box-shadow: none !important;
+    @include transition;
+    position: relative;
+    z-index: 2;
+    border-radius: 0px;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: rgba(255,255,255,1);
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        -webkit-transform: scale(1, 0.5);
+        transform: scale(1, 0.5);
+        border-radius: 4px;
+        z-index: -1;
+        border-radius: 0px;
+        border: 1px solid $baseColor;
+    }
+    &:hover, &:focus{
+        &:before{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        color: $baseColor;
+    }
+    &.red_submit_btn2{
+        background: $red;
+        &:before{
+            border-color: $red;
+        }
+        &:hover{
+            color: $red;
+        }
+    }
+    &.blue_submit_btn2{
+        background: $blue;
+        &:before{
+            border-color: $blue;
+        }
+        &:hover{
+            color: $blue;
+        }
+    }
+}
+/* End Store BTN area css
+============================================================================================ */
+
+/* Slider BTN area css
+============================================================================================ */
+.s_btn {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+    background: transparent;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px; 
+    color: #fff;
+    width: 100%;
+    font-size: 13px;
+    font-family: $mon;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    @include transition;
+    padding: 0px;
+}
+.s_btn {
+    display: inline-block;
+}
+.s_btn:hover {
+    text-decoration: none;
+}
+.s_btn {
+    font-weight: 100;
+}
+.s_btn svg {
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.s_btn rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+}
+
+.s_btn:hover {
+    background: rgba(225, 51, 45, 0);
+    color: #fff;
+}
+.s_btn:hover rect {
+    stroke-width: 3;
+    stroke-dasharray: 20, 310;
+    stroke-dashoffset: 25;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* End Slider BTN area css
+============================================================================================ */

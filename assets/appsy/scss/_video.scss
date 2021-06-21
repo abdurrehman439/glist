@@ -1,0 +1,125 @@
+/* Video area css
+============================================================================================ */
+.video_area{
+    padding-top: 105px;
+    .video_row{
+        position: relative;
+        img{
+            max-width: 100%;
+        }
+        a{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+            color: #fff;
+            border: 1px solid #fff;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 72px;
+            display: inline-block;
+            line-height: 78px;
+            i{
+                padding-left: 8px;
+            }
+        }
+    }
+}
+.video_frame{
+    iframe{
+        width: 100%;
+        min-height: 400px;
+        margin-bottom: -8px;
+    }
+    .mfp-close{
+        color: #fff;
+        right: -40px;
+        top: -40px;
+    }
+}
+/* End Video area css
+============================================================================================ */
+
+/* Video Content area css
+============================================================================================ */
+.video_content_area{
+    overflow: hidden;
+    clear: both;
+    display: flex;
+    .left_video_area{
+        width: 50%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        img{
+            max-width: 100%;
+        }
+        a{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+            color: #fff;
+            border: 1px solid #fff;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 72px;
+            display: inline-block;
+            line-height: 78px;
+            i{
+                padding-left: 8px;
+            }
+        }
+    }
+    .right_content_area{
+        width: 50%;
+        float: right;
+        background: #f7f7f7;
+        align-self: center;
+        vertical-align: middle;
+        flex: 1;
+        .video_right_content_inner{
+            padding-left: 30px;
+            max-width: 570px;
+            ul{
+                padding-top: 35px;
+                li{
+                    counter-increment: step-counter;
+                    position: relative;
+                    &:before{
+                        content: counter(step-counter);
+                        margin-right: 10px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        color: $pfont;
+                        font-family: $op;
+                    }
+                    &:after{
+                        content: ".";
+                        position: absolute;
+                        left: 8px;
+                        bottom: 2px;
+                    }
+                    a{
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: $pfont;
+                        font-family: $op;
+                        @include transition;
+                    }
+                    &:hover{
+                        a{
+                            color: $baseColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Video Content area css
+============================================================================================ */

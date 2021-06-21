@@ -1,0 +1,7 @@
+config.php
+index.php
+.htaccess
+customizer.js
+maps.js
+custom.js
+database.php

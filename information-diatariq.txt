@@ -1,0 +1,9 @@
+config.php : Change the base_url from $config['base_url'] = 'https://glokallist.com';
+--------------------------------
+$config['base_url'] = 'http://localhost/ci';
+
+
+.htaccess : modify the file to re-direct the pages and execute the controller method.
+-------------------------------------------------------------
+From : RewriteBase /    : move this in production to user domain.com
+To : RewriteBase /ci/

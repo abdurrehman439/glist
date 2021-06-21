@@ -1,0 +1,169 @@
+.login-container {
+    margin-top: 6.5%;
+    margin-bottom: 5%;
+}
+
+.login-form-1 {
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: #fff;
+}
+
+.login-form-1 h4 {
+    font-weight: unset;
+    margin-left: 1rem;
+    font-size: 18px;
+    color: #333;
+}
+
+.login-form-2 {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-size: cover;
+    background-image: url(<?php echo base_url();
+    ?>assets/images/photo-long-3.jpg);
+}
+
+.login-form-2 h3 {
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.login-container form {
+    padding: 5%;
+}
+
+.btnSubmit {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    margin-top: .5rem;
+}
+
+.login-form-1 .btnSubmit {
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+.login-form-2 .btnSubmit {
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+
+.login-form-2 .ForgetPwd {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-form-1 .ForgetPwd {
+    color: #1f1f1f;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.social {
+    padding: 8rem 1rem;
+}
+
+.social_login {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 2rem;
+    margin-bottom: 1rem !important;
+    background: rgba(238, 238, 238, .6);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.social_login a {
+    color: #1f1f1f;
+}
+
+.form-control {
+    font-size: 13px;
+    border-radius: 41px !important;
+    width: 100%;
+}
+
+body {
+    background-image: url(<?php echo base_url();
+    ?>assets/images/photo-wide-4.jpg);
+}
+
+.logo_class {
+    width: 100px;
+    height: 100px;
+    margin-top: 2rem;
+}
+
+label {
+    font-size: 12px;
+    color: #70657b;
+}
+
+#social_login1 {
+    border: solid 1px #639;
+}
+
+#social_login1 a {
+    color: #639;
+    font-size: 13px;
+}
+
+#social_login2 {
+    border: solid 1px #ec412c;
+}
+
+#social_login2 a {
+    color: #ec412c;
+    font-size: 13px;
+}
+
+#social_login3 {
+    border: solid 1px #3765c9;
+}
+
+#social_login3 a {
+    color: #3765c9;
+    font-size: 13px;
+}
+
+.forgot a {
+    color: #1f1f1f;
+}
+
+.form-group {
+    margin-bottom: .5rem;
+}
+
+.center_row {
+    width: 70%;
+    margin: auto;
+}
+
+#social_login32:hover {
+    color: #fff;
+    background-color: #639;
+    border-color: #639;
+}
+
+#social_login22:hover {
+    color: #fff;
+    color: #ec412c;
+    border-color: #ec412c;
+}
+
+#social_login22:hover {
+    color: #fff;
+    color: #3765c9;
+    border-color: #3765c9;
+}

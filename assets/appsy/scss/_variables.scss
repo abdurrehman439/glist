@@ -1,0 +1,35 @@
+/*font Variables*/
+$op: 'Open Sans', sans-serif;
+$mon: 'Montserrat', sans-serif;
+
+/*Color Variables*/
+
+$baseColor: #673ab7;
+$red: #ed3851;
+$blue: #008ed6;
+$dip: #444444;
+$pfont: #666666;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+// Font family link
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700,800|Open+Sans:300,400,400i,600,600i,700,800');
+

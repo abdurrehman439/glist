@@ -1,0 +1,515 @@
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration:none;
+    &:hover, &:focus{
+       text-decoration:none;
+       outline: none;
+    }
+}
+.row.m0{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    line-height: 26px;
+    font-size: 14px;
+    font-family: $op;
+}
+
+body, p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+
+.display_table{
+    display: table;
+    width: 100%;
+}
+.display_table_row{
+    display: table-row;
+}
+.display_table_cell{
+    display: table-cell;
+    float: none !important;
+}
+
+iframe{
+    border: none;
+}
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+        color: #cfd3d4;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+/* Contact From popup css
+============================================================================================ */
+.modal-message{
+    .modal-dialog{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 30%;
+        position: absolute;
+        transform: translateY(-50%);
+        right: 0px;
+        left: 0px;
+        border-radius: 0px;
+        .modal-content{
+            border: none;
+            border-radius: 15px;
+            text-align: center;
+            .modal-header{
+                border-bottom: 0px;
+                h2{
+                    color: #000;
+                    font-size: 40px;
+                    font-family: $op; 
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+                    padding-bottom: 10px;
+                    padding-top: 50px;
+                } 
+                p{
+                    color: $dip;
+                    font-size: 16px;
+                    font-family: $op;
+                    padding-bottom: 60px;
+                }
+            }    
+        }
+    }
+}
+.modal-backdrop{
+    z-index: 20;
+}
+/* End Contact From popup css
+============================================================================================ */
+
+
+/* Main title css
+============================================================================================ */
+.sec_title{
+    text-align: center;
+    max-width: 770px;
+    margin: auto;
+    padding-bottom: 70px;
+    h2{
+        font-size: 32px;
+        color: $dip;
+        font-family: $mon;
+        padding-bottom: 60px;
+        position: relative;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:before{
+            content: "";
+            width: 83px;
+            height: 2px;
+            background: $baseColor;
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+        }
+    }
+    p{
+        font-size: 14px;
+        font-family: $op;
+        color: $pfont;
+    }
+    &.red_sec_title{
+        h2{
+            &:before{
+                background: $red;
+            }
+        }
+    } 
+    &.blue_sec_title{
+        h2{
+            &:before{
+                background: $blue;
+            }
+        }
+    }    
+}
+.sec_whit_title{
+    text-align: center;
+    max-width: 770px;
+    margin: auto;
+    padding-bottom: 75px;
+    h2{
+        font-size: 32px;
+        color: #fff;
+        font-family: $mon;
+        padding-bottom: 60px;
+        font-weight: 400;
+        position: relative;
+        text-transform: uppercase;
+        &:before{
+            content: "";
+            width: 83px;
+            height: 2px;
+            background: $baseColor;
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            transform: translateX(-50%);
+        }
+    }
+    p{
+        font-size: 14px;
+        font-family: $op;
+        color: $pfont;
+        color: #fff;
+    }
+    &.red_sec_w_title{
+        h2{
+            &:before{
+                background: $red;
+            }
+        }
+    }
+    &.blue_sec_w_title{
+        h2{
+            &:before{
+                background: $blue;
+            }
+        }
+    }
+}
+
+.sec_left_title{
+    h2{
+        font-size: 32px;
+        color: $dip;
+        font-family: $mon;
+        padding-bottom: 35px;
+        position: relative;
+        font-weight: 400;
+        text-transform: uppercase;
+        &:before{
+            content: "";
+            width: 83px;
+            height: 2px;
+            background: $baseColor;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+        }
+    }
+    p{
+        font-size: 14px;
+        font-family: $op;
+        color: $pfont;
+        padding-top: 30px;
+    }
+}
+/* End Main title css
+============================================================================================ */
+
+
+
+/* External Popup css
+============================================================================================ */
+
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+
+/* 
+
+====== 3d unfold ======
+
+*/
+.mfp-3d-unfold {
+  /* start state */
+  /* animate in */
+  /* animate out */
+}
+.mfp-3d-unfold .mfp-content {
+  perspective: 2000px;
+}
+.mfp-3d-unfold .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(-60deg);
+}
+.mfp-3d-unfold.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.mfp-3d-unfold.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.mfp-3d-unfold.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-3d-unfold.mfp-removing .mfp-with-anim {
+  transform: rotateY(60deg);
+  opacity: 0;
+}
+.mfp-3d-unfold.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+/* End External Popup css
+============================================================================================ */
+
+/* Gray Curv css
+============================================================================================ */
+.gary_curv{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+    &:before{
+        content: "";
+        background: url(../img/gray-top-curv.png) no-repeat scroll center center;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        height: 64px;
+        width: 100%;
+    }
+    &:after{
+        content: "";
+        background: url(../img/gray-bottom-curv.png) no-repeat scroll center center;
+        background-size: cover;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        z-index: 2;
+        height: 64px;
+        width: 100%;
+    }
+}
+/* End Gray Curv css
+============================================================================================ */
+
+
+
+
+/* Ripple css
+============================================================================================ */
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    opacity: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    opacity: 0;
+  }
+}
+.hvr-ripple-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+/* End Ripple css
+============================================================================================ */
+
+
+/* Help User css
+============================================================================================ */
+.user_sms{
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    width: 185px;
+    background: #5529a1;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    padding: 4px;
+    z-index: 7;
+    .media{
+        .media-left{
+            img{
+                
+            }
+        }
+        .media-body{
+            vertical-align: middle;
+            h4{
+                font-size: 14px;
+                font-family: $mon;
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: 0.7px;
+                padding-bottom: 7px;
+            }
+            h5{
+                color: #fff;
+                font-size: 10px;
+                font-family: $op;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+    &.red_user{
+        background: #c61a32;
+    }
+    &.blue_user{
+        background: #005885;
+    }    
+}
+/* End Help User css
+============================================================================================ */
+
+
+/* Svg css
+============================================================================================ */
+/* Morph Shape */
+.morph-shape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	fill: #502994;
+}
+.red_side_menu{
+    .morph-shape{
+        fill: #c61a32;
+    }
+}
+.blue_side_menu{
+    .morph-shape{
+        fill: #0172ab;
+    }
+}
+
+/* Shown menu */
+.show-menu .menu-wrap,
+.show-menu .content::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.show-menu .menu-wrap,
+.show-menu .menu,
+.show-menu .close-button,
+.show-menu .morph-shape,
+.show-menu .content::before {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.show-menu .menu,
+.show-menu .close-button {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.show-menu .content::before {
+	opacity: 1;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+/* End Svg css
+============================================================================================ */
+
+/* Typed Cursor css
+============================================================================================ */
+.typed-cursor{
+    opacity: 1;
+    font-weight: 100;
+    color: #fff;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    position: relative;
+    top: -2px;
+}
+@-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+/* End Typed Cursor css
+============================================================================================ */
+
+
